@@ -388,11 +388,11 @@ section {
   }
   
   .zoom-effect:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
   }
   .zoom-effects:hover {
-    transform: scale(1.5);
-    background-color: #000000;
+    transform: scale(1.1);
+    background-color: #1a1a1a;
   }
   .navmenu .megamenu ul {
     margin: 0;
@@ -917,8 +917,7 @@ section {
 }
 
 .clients .client-logo img {
-  padding: 40px;
-  max-width: 80%;
+  padding-top: 40px;
   transition: 0.3s;
   opacity: 0.5;
   filter: grayscale(100);

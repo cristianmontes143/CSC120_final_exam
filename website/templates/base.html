@@ -6,7 +6,7 @@
         <meta content="" name="description">
         <meta content="" name="keywords">
 
-        <link href="{{ url_for('static', filename='img/favicon.png') }}" rel="icon">
+        <link href="{{ url_for('static', filename='img/Hero_Background.png') }}" rel="icon">
         <link href="{{ url_for('static', filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -82,7 +82,7 @@
                     <div class="col-xl-5 content">
                     <h2>What is Intelligent Systems?</h2>
                     <p>Intelligent systems refer to computer-based systems that can autonomously perform tasks that typically require human intelligence, such as perception, reasoning, learning, and decision-making. These systems often leverage techniques from artificial intelligence, machine learning, and other related fields to achieve their goals.</p>
-                    <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    <a href="{{ url_for('views.about') }}" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                     </div>
                     <div class="col-xl-7">
                     <div class="row gy-5 icon-boxes">
@@ -143,16 +143,15 @@
                     <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
                     <h3>Linear Regression</h3>
                     <p>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                        Our Linear Regression model utilizes mortgage interest rates to predict median house prices. By training the model with 16 carefully selected data points, we have developed a powerful tool for various applications. Whether you're interested in real estate investment, mortgage lending, government policy-making, or economic analysis, our trained model provides valuable insights to support your decision-making process.
                     </p>
                     <a href="{{ url_for('views.about') }}" "#linear-regression" class="btn btn-get-started">Get Started</a>
 
                     </div>
                     <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
                     <div class="image-stack">
-                        <img src="{{ url_for('static', filename='img/features-light-1.jpg') }}" alt="" class="stack-front">
-                        <img src="{{ url_for('static', filename='img/features-light-2.jpg') }}" alt="" class="stack-back">
+                        <img src="{{ url_for('static', filename='img/image_model/BG-LR2.png') }}" alt="" class="stack-front">
+                        <img src="{{ url_for('static', filename='img/image_model/BG-LR.png') }}" alt="" class="stack-back">
                     </div>
                     </div>
                     </div>
@@ -161,16 +160,11 @@
                 <div id="logistic-regression" class="model-section">
                 <div class="row gy-4 align-items-stretch justify-content-between features-item ">
                     <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-                    <img src="{{ url_for('static', filename='img/features-light-3.jpg') }}" class="img-fluid" alt="">
+                          <img src="{{ url_for('static', filename='img/image_model/BG-LLR2.png') }}" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
                     <h3>Logistic Regression</h3>
-                    <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-                    <ul>
-                        <li><i class="bi bi-check"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                        <li><i class="bi bi-check"></i><span> Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                        <li><i class="bi bi-check"></i> <span>Facilis ut et voluptatem aperiam. Autem soluta ad fugiat</span>.</li>
-                    </ul>
+                    Our innovative personal loan predictor uses Logical Regression to determine whether an individual is likely to be approved for a loan. By analyzing a vast dataset of 5000 records, our model has been trained to accurately forecast loan outcomes. With this tool, you can streamline the loan application process and receive tailored loan offers that suit your unique financial needs.</p>
                     <a href= {{ url_for('views.about' ) }}  class="btn btn-get-started align-self-start">Get Started</a>
                     </div>
                     </div>
@@ -181,15 +175,14 @@
                     <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
                     <h3>Neural Network</h3>
                     <p>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                        Our state-of-the-art neural network model has been specifically designed to assess the likelihood of a heart attack. Trained on a comprehensive dataset of 300 records, this powerful tool can provide you with an estimated probability of experiencing a heart attack. However, please note that this model is intended for code demonstration purposes only and should not be used for medical diagnosis or treatment. Always consult a healthcare professional for accurate medical assessments.
                     </p>
                     <a href={{ url_for('views.about') }} class="btn btn-get-started">Get Started</a>
                     </div>
                     <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
                     <div class="image-stack">
-                        <img src="{{ url_for('static', filename='img/features-light-1.jpg') }}" alt="" class="stack-front">
-                        <img src="{{ url_for('static', filename='img/features-light-2.jpg') }}" alt="" class="stack-back">
+                        <img src="{{ url_for('static', filename='img/image_model/BG-NN2.png') }}" alt="" class="stack-front">
+                        <img src="{{ url_for('static', filename='img/image_model/BG-NN.png') }}" alt="" class="stack-back">
                     </div>
                     </div>
                     </div>
@@ -198,16 +191,11 @@
                 <div id="deep-learning" class="model-section">
                 <div class="row gy-4 align-items-stretch justify-content-between features-item ">
                     <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-                    <img src="{{ url_for('static', filename='img/features-light-3.jpg') }}" class="img-fluid" alt="">
+                         <img src="{{ url_for('static', filename='img/image_model/BG-DL.jpeg') }}" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
                     <h3>Deep Learning</h3>
-                    <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-                    <ul>
-                        <li><i class="bi bi-check"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                        <li><i class="bi bi-check"></i><span> Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                        <li><i class="bi bi-check"></i> <span>Facilis ut et voluptatem aperiam. Autem soluta ad fugiat</span>.</li>
-                    </ul>
+                    <p>Our advanced deep learning system harnesses the power of the BERT model to analyze the sentiment of tweets. With a robust training dataset comprising 16,200 unique records, our model is adept at detecting sentiment across a wide range, from very negative to very positive. Whether you're interested in gauging public opinion, conducting market research, or monitoring brand sentiment, our trained model provides accurate and insightful sentiment analysis for your Twitter data</p>
                     <a href={{ url_for('views.about') }} class="btn btn-get-started align-self-start">Get Started</a>
                     </div>
                     </div>
@@ -218,15 +206,14 @@
                     <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
                     <h3>Reinforcement Learning</h3>
                     <p>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                        Our groundbreaking approach to reinforcement learning involves training an AI using a q-table within a grid-world traffic simulation. This trained AI offers tremendous potential for a range of applications, including autonomous cars, traffic management, and road construction/management. With our cutting-edge technology, you can unlock innovative solutions for optimizing traffic flow, improving road safety, and enhancing overall transportation efficiency. Experience the future of intelligent traffic systems with our trained AI.
                     </p>
                     <a href={{ url_for('views.about') }} class="btn btn-get-started">Get Started</a>
                     </div>
                     <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
                     <div class="image-stack">
-                        <img src="{{ url_for('static', filename='img/features-light-1.jpg') }}" alt="" class="stack-front">
-                        <img src="{{ url_for('static', filename='img/features-light-2.jpg') }}" alt="" class="stack-back">
+                        <img src="{{ url_for('static', filename='img/image_model/BG-RL2.png') }}" alt="" class="stack-front">
+                        <img src="{{ url_for('static', filename='img/image_model/BG-RL.png') }}" alt="" class="stack-back">
                     </div>
                     </div>
                     </div>
@@ -244,7 +231,6 @@
                 <!-- Section Title -->
                 <div class="container section-title" data-aos="fade-up">
                 <h2>Dataset</h2>
-                <p>description sa dataset</p>
                 </div><!-- End Section Title -->
             
                 <div class="container">
@@ -255,9 +241,11 @@
                     <div class="service-item d-flex">
                         <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
                         <div>
-                        <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                        </div>
+                        <h4 class="title"><a href="#" class="stretched-link">House Price</a></h4>
+                        <p class="description">
+                            Explore House Price and Mortgage Interest Rate Data
+                            Discover insights into housing market trends with our dataset containing 16 data points on house prices and their corresponding mortgage interest rates.
+                           </div>
                     </div>
                     </div>
                     <!-- End Service Item -->
@@ -266,8 +254,9 @@
                     <div class="service-item d-flex">
                         <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
                         <div>
-                        <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-                        <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                        <h4 class="title"><a href="#" class="stretched-link">Bank Personal Loan</a></h4>
+                        <p class="description">Explore Personal Loan Dataset: 5000 Rows, 14 Columns
+                            Discover valuable insights from our dataset containing 5000 rows and 14 columns, including personal loan acceptance, customer demographics, financial indicators, and banking preferences.</p>
                         </div>
                     </div>
                     </div><!-- End Service Item -->
@@ -276,8 +265,9 @@
                     <div class="service-item d-flex">
                         <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
                         <div>
-                        <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
-                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                        <h4 class="title"><a href="#" class="stretched-link"> Heart attack Prediction</a></h4>
+                        <p class="description">Heart Disease Diagnosis Datasets: Cleveland, Hungarian, Switzerland, Long Beach VA
+                            Explore four comprehensive heart disease diagnosis databases, each sourced from renowned medical institutions. Uncover valuable insights from these numeric-valued datasets containing 76 attributes, with a focus on distinguishing the presence or absence of heart disease.</p>
                         </div>
                     </div>
                     </div><!-- End Service Item -->
@@ -286,7 +276,7 @@
                     <div class="service-item d-flex">
                         <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
                         <div>
-                        <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
+                        <h4 class="title"><a href="#" class="stretched-link">Twitter sentiment</a></h4>
                         <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                         </div>
                     </div>
@@ -322,7 +312,6 @@
                     </div>
                     <div class="member-info text-center">
                         <h4>Junisare V. Silvosa</h4>
-                        <span>Member</span>
                     </div>
                     </div><!-- End Team Member -->
             
@@ -338,7 +327,6 @@
                     </div>
                     <div class="member-info text-center">
                         <h4>Cristian D. Montes</h4>
-                        <span>Member</span>
                     </div>
                     </div><!-- End Team Member -->
             
@@ -354,7 +342,6 @@
                     </div>
                     <div class="member-info text-center">
                         <h4>Rouela C. Dalagan</h4>
-                        <span>Member</span>
                     </div>
                     </div><!-- End Team Member -->
                 </div>
@@ -373,9 +360,8 @@
                 <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
                     <div class="col-xl-10">
                     <div class="text-center">
-                        <h3>Call To Action</h3>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a class="cta-btn" href="#">Call To Action</a>
+                        <h3>What is Intelligent System?</h3>
+                        <p>An intelligent system refers to a computer-based system or software that is designed to exhibit intelligent behavior and perform tasks that typically require human intelligence. It involves the use of advanced algorithms, data analysis, and machine learning techniques to make informed decisions and adapt to changing conditions.</p>
                     </div>
                     </div>
                 </div>
@@ -392,9 +378,9 @@
             <div class="row gy-4">
                 <div class="col-lg-5 col-md-12 footer-about">
                 <a href="{{ url_for('views.home') }}" class="logo d-flex align-items-center">
-                    <span>Append</span>
+                    <span>Intelligent System</span>
                 </a>
-                <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                <p>Welcome to Intelligent Systems code repository!!</p>
                 <div class="social-links d-flex mt-4">
                     <a href=""><i class="bi bi-twitter"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -406,11 +392,10 @@
                 <div class="col-lg-2 col-6 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
-                    <li><a href="{{ url_for('views.home') }}">Home</a></li>
-                    <li><a href="{{ url_for('views.home') }}">About us</a></li>
-                    <li><a href="{{ url_for('views.home') }}">Services</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="{{ url_for('views.home') }}"class="active">Home</a></li>
+                    <li><a href="{{ url_for('views.home') }}#about">About</a></li>
+                    <li><a href="{{ url_for('views.home') }}#services">Dataset</a></li>
+                    <li><a href="{{ url_for('views.home') }}#team">Team</a></li>
                 </ul>
                 </div>
         
@@ -426,18 +411,21 @@
                 </div>
         
                 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                <h4>Contact Us</h4>
-                <p>A108 Adam Street</p>
-                <p>New York, NY 535022</p>
-                <p>United States</p>
-                <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                <p><strong>Email:</strong> <span>info@example.com</span></p>
+                <h4>Contact us</h4>
+                <p>Caraga State </p>
+                <p>University</p>
+                <p>Ampayon</p>
+                <p class="mt-4"><strong>Phone:</strong> <span>+63951 4606 180</span></p>
+                <p><strong>Email:</strong> </p>
+                    <p><span>Cristian.montes@carsu.edu.ph</span></p>
+                    <p><span>Junisare.Silvosa@carsu.edu.ph</span></p>
+                    <p><span>Rouela.Dalagan@carsu.edu.ph</span></p>
                 </div>
             </div>
             </div>
         
             <div class="container copyright text-center mt-4">
-            <p>&copy; <span>{{ year }}</span> <strong class="px-1">Append</strong> <span>All Rights Reserved</span></p>
+            <p>&copy; <span>{{ year }}</span> <strong class="px-1">intelligent</strong> <span>All Rights Reserved</span></p>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you've purchased the pro version. -->
