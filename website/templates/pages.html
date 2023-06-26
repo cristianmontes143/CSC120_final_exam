@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
@@ -35,597 +35,705 @@
     ======================================================== -->
   </head>
   
-<body class="blog-details-page">
+  <body class="blog-details-page">
 
-  <!-- ======= Header ======= -->
-<header id="header" class="header sticky-top d-flex align-items-center">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
-      <a href="{{ url_for('views.home') }}" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="{{ url_for('static', filename='img/logo.png') }}" alt=""> -->
-        <h2>Intelligent Systems</h2>
-        
-      </a>
-  
-      <!-- Nav Menu -->
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="{{ url_for('views.about') }}" class="zoom-effects">Home</a></li>
-          <li><a href="#linear-regression" class="zoom-effects">Linear Regression</a></li>
-          <li><a href="#logistic-regression" class="zoom-effects">Logistic Regression</a></li>
-          <li><a href="#neural-network" class="zoom-effects">Neural Network</a></li>
-          <li><a href="#deep-learning" class="zoom-effects">Deep Learning</a></li>
-          <li><a href="#reinforcement-learning" class="zoom-effects">Reinforcement Learning</a></li>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header sticky-top d-flex align-items-center">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+        <a href="{{ url_for('views.home') }}" class="logo d-flex align-items-center me-auto me-xl-0">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="{{ url_for('static', filename='img/logo.png') }}" alt=""> -->
+          <h2>Intelligent Systems</h2>
           
-          <li class="dropdown has-dropdown"><a href="#"><span>Dataset</span> <i class="bi bi-chevron-down"></i></a>
-            <ul class="dd-box-shadow">
-              <li><a href="#linear-regression">Linear Regression</a></li>
-              <li><a href="#logistic-regression">Logistic Regression</a></li>
-              <li><a href="#neural-network">Neural Network</a></li>
-              <li><a href="#deep-learning">Deep Learning</a></li>
-              <li><a href="#reinforcement-learning">Reinforcement Learning</a></li>
-            </ul>
-          </li>
-        </ul>
-  
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav><!-- End Nav Menu -->
-  
-      <a class="btn-getstarted" href="{{ url_for('views.home') }}#about" >Back to home page</a>
-  
-    </div>
-  </header><!-- End Header -->
-  
-
-  <main id="main">
-
-
-    <section id="call-to-action" class="call-to-action" style="background-image: url({{ url_for('static', filename='img/backgroud.jpg') }});">
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Click the picture</h3>
-              <p>sghslifhsdlkjfbdskljjfvhsjbfhdjfs</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Call-to-action Section -->    
-
-<!-- Clients Section - Home Page -->
-<section id="clients" class="clients">
-
-  <div class="container-fluid" data-aos="fade-up">
-
-    <div class="row justify-content-center gy-4">
-
-      <div class="col-xl-2 col-md-3 col-6 client-logo">
-        <a class="zoom-effect" href="#linear-learning">
-          <img src="{{ url_for('static', filename='img/image_model/linear.png') }}" class="img-fluid" alt="">
         </a>
-        </div><!-- End Client Item -->
-
-      <div class="col-xl-2 col-md-3 col-6 client-logo">
-        <a class="zoom-effect" href="#logistic-learning">
-            <img src="{{ url_for('static', filename='img/image_model/logical.png') }}" class="img-fluid" alt="">
-          </a>
-          </div><!-- End Client Item -->
-
-        <div class="col-xl-2 col-md-3 col-6 client-logo">
-        <a class="zoom-effect" href="#neural-learning">
-          <img src="{{ url_for('static', filename='img/image_model/neural.png') }}" class="img-fluid" alt="">
-        </a>
-        </div><!-- End Client Item -->
-
-      <div class="col-xl-2 col-md-3 col-6 client-logo">
-        <a class="zoom-effect" href="#deepl-learning">
-          <img src="{{ url_for('static', filename='img/image_model/deep.png') }}" class="img-fluid" alt="">
-        </a>
-        </div><!-- End Client Item -->
-
-      <div class="col-xl-2 col-md-3 col-6 client-logo">
-          <a class="zoom-effect" href="#rein-learning">
-          <img src="{{ url_for('static', filename='img/image_model/reinforcement.png') }}" class="img-fluid" alt="">
-        </a>
-      </div><!-- End Client Item -->
-
-    </div>
-
-  </div>
-
-</section><!-- End Clients Section -->
-
-
-
-
-
-
-
-
-<!-- Linear Regression Page Title & Breadcrumbs -->
-<div id="linear-regression" class="model-section">
-<div data-aos="fade" class="page-title">
-    <div class="heading">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row d-flex justify-content-center text-center">
-          <div class="col-lg-8">
-            <h1>Linear Regression</h1>
-            <p class="mb-0">Linear regression is a supervised learning algorithm used to predict continuous output variables.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <nav class="breadcrumbs">
-      <div class="container">
-      </div>
-    </nav>
-  </div>
-  </div><!-- End Page Title -->
-  
-
-    <!--Linear Regression Section - Blog Details Page -->
-<!-- Linear Regression - Blog Details Page -->
-
-<section id="blog-details" class="blog-details">
-
-    <div class="container " data-aos="fade-up" data-aos-delay="100">
-  
-      <div class="row g-5 justify-content-center text-center">
-  
-        <div class="col-lg-8">
-  
-          <article class="article">
-  
-            <div class="post-img">
-              <img src="{{ url_for('static', filename='img/image_model/BG-LR2.png') }}" alt="" class="img-fluid">
-            </div>
-  
-            <h2 class="title">Linear Regression Code Documentation </h2>
-  
-            <div class="meta-top">
-
-            </div><!-- End meta top -->
-  
-            <div class="content">
-              <p>
-                Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
-              </p>
-  
-              <p>
-                Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
-              </p>
-
-              <div id="linear-learning">\
-                <hr></hr>
-              </div>
-
-              <blockquote>
-                <p>
-                  UI
-                </p>
-              </blockquote>
-              <h3>About Dataset</h3>
-              <p>
-                House Price and Mortgage Interest Rate Dataset
-		Our comprehensive dataset provides valuable information on house prices and their corresponding mortgage interest rates. With 16 carefully selected data points, this collection offers a snapshot of the relationship between housing market dynamics and lending rates. Dive deeper into the dataset to gain insights into the fluctuating real estate market, evaluate mortgage affordability, or conduct research on housing trends. Uncover key correlations and make informed decisions using this invaluable resource.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Logistic Regression Page Title & Breadcrumbs -->
-<div id="logistic-regression" class="model-section">
-<div data-aos="fade" class="page-title">
-  <div class="heading">
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row d-flex justify-content-center text-center">
-        <div class="col-lg-8">
-          <h1>Logistic Regression</h1>
-          <p class="mb-0">Logistic regression is a supervised learning algorithm used to predict binary or categorical output variables based on input variables.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <nav class="breadcrumbs">
-    <div class="container">
-    </div>
-  </nav>
-</div>
-</div><!-- End Page Title -->
-
-<section id="blog-details" class="blog-details">
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row g-5 justify-content-center text-center">
-
-      <div class="col-lg-8">
-
-        <article class="article">
-
-          <div class="post-img">
-            <img src="{{ url_for('static', filename='img/image_model/BG-LLR2.png') }}" alt="" class="img-fluid">
-          </div>
-
-          <h2 class="title">Logistic Regression Code Documentation</h2>
-
-          <div class="meta-top">
-
-          </div><!-- End meta top -->
-
-          <div class="content">
-            <p>
-              Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-              Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
-            </p>
-
-            <p>
-              Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
-            </p>
-
-            <div id="logistic-learning">\
-              <hr></hr>
-            </div>
-            <blockquote>
-              
-              <p>
-                UI.
-              </p>
+    
+        <!-- Nav Menu -->
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="{{ url_for('views.about') }}" class="zoom-effects">Home</a></li>
+            <li><a href="#linear-regression" class="zoom-effects">Linear Regression</a></li>
+            <li><a href="#logistic-regression" class="zoom-effects">Logistic Regression</a></li>
+            <li><a href="#neural-network" class="zoom-effects">Neural Network</a></li>
+            <li><a href="#deep-learning" class="zoom-effects">Deep Learning</a></li>
+            <li><a href="#reinforcement-learning" class="zoom-effects">Reinforcement Learning</a></li>
             
-            </blockquote>
-            <h3>About Dataset</h3>
-            <p>
-              Personal Loan Dataset: Customer Profiles and Financial Indicators
-		Our extensive dataset offers a comprehensive view of customer profiles and financial indicators related to personal loans. With 5000 rows and 14 columns, this dataset provides a wealth of information for analysis and research purposes. Dive deeper into customer attributes such as age, professional experience, income, family size, credit card usage, education level, mortgage details, and banking preferences. Gain valuable insights into factors influencing personal loan acceptance, identify patterns in customer behavior, and explore the relationships between various features. This dataset is a valuable resource for financial institutions, researchers, and analysts looking to understand customer preferences and make data-driven decisions.
-            </p>
-          </div>
-        </article>
+            <li class="dropdown has-dropdown"><a href="#"><span>Dataset</span> <i class="bi bi-chevron-down"></i></a>
+              <ul class="dd-box-shadow">
+                <li><a href="#linear-regression">Linear Regression</a></li>
+                <li><a href="#logistic-regression">Logistic Regression</a></li>
+                <li><a href="#neural-network">Neural Network</a></li>
+                <li><a href="#deep-learning">Deep Learning</a></li>
+                <li><a href="#reinforcement-learning">Reinforcement Learning</a></li>
+              </ul>
+            </li>
+          </ul>
+    
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav><!-- End Nav Menu -->
+    
+        <a class="btn-getstarted" href="{{ url_for('views.home') }}#about" >Back to home page</a>
+    
       </div>
-    </div>
-  </div>
-</section>
-
-  <!-- Neural network Page Title & Breadcrumbs -->
-  <div id="neural-network" class="model-section">
-  <div data-aos="fade" class="page-title">
-    <div class="heading">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row d-flex justify-content-center text-center">
-          <div class="col-lg-8">
-            <h1>Neural Network</h1>
-            <p class="mb-0">Neural networks are a class of algorithms inspired by the structure and function of the human brain, used for a wide range of tasks such as image recognition, natural language processing, and more.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <nav class="breadcrumbs">
-      <div class="container">
-      </div>
-    </nav>
-  </div>
-  </div><!-- End Page Title -->
-
-  <section id="blog-details" class="blog-details">
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-  
-      <div class="row g-5 justify-content-center text-center">
-  
-        <div class="col-lg-8">
-  
-          <article class="article">
-  
-            <div class="post-img">
-              <img src="{{ url_for('static', filename='img/image_model/BG-NN2.png') }}" alt="" class="img-fluid">
-            </div>
-  
-            <h2 class="title">Neural Network Code Documentation</h2>
-  
-            <div class="meta-top">
-  
-            </div><!-- End meta top -->
-  
-            <div class="content">
-              <p>
-                Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
-              </p>
-  
-              <p>
-                Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
-              </p>
-              
-              <div id="neural-learning">
-                <hr></hr>
-              </div>
-
-              <blockquote>
-                <p>
-                  UI
-                </p>
-              </blockquote>
- 
-              <h3>About Dataset</h3>
-              <p>
-                Heart Disease Diagnosis Datasets: Detailed Information
-		This collection includes four datasets related to heart disease diagnosis, sourced from esteemed medical institutions: Cleveland Clinic Foundation, Hungarian Institute of Cardiology, V.A. Medical Center in Long Beach, CA, and University Hospital in Zurich, Switzerland. Each database shares a common instance format, with 76 raw attributes, although only a subset of 14 attributes has been extensively used in past experiments.
-		
-		The "goal" field within these databases indicates the presence of heart disease in patients, with integer values ranging from 0 (no presence) to 4. Notably, the Cleveland database has been widely utilized by machine learning researchers in heart disease studies.
-		
-		To respect privacy, the names and social security numbers of patients have been replaced with dummy values. In addition to the processed Cleveland database, the directory also contains the four unprocessed files.
-		
-		Number of instances:
-		- Cleveland: 303
-		- Hungarian: 294
-		- Switzerland: 123
-		- Long Beach VA: 200
-		
-		Attribute Information:
-		The dataset comprises 76 attributes, with published experiments typically focusing on a subset of 14 attributes. These attributes include patient demographics, medical measurements, and history. Complete attribute documentation is available for in-depth analysis. The datasets provide valuable insights into factors contributing to heart disease presence, allowing researchers and healthcare professionals to explore patterns, conduct experiments, and develop accurate diagnostic models.
-		
-		Class Distribution:
-		The class distribution varies across the databases, with different frequencies for each category of heart disease diagnosis. Please refer to the specific dataset for detailed class distribution information.
-		
-		Please note that the dataset may contain missing attribute values, which are denoted with the value -9.0.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-    <!-- Deep Learning Page Title & Breadcrumbs -->
-    <div id="deep-learning" class="model-section">
-    <div data-aos="fade" class="page-title">
-      <div class="heading">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Deep Learning</h1>
-              <p class="mb-0">Deep learning is a subset of neural networks that involves training multi-layered models to perform complex tasks, often with large amounts of data.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav class="breadcrumbs">
+    </header><!-- End Header -->
+    <main id="main">
+      <!-- Start Call-to-action Section -->
+      <section id="call-to-action" class="call-to-action" style="background-image: url({{ url_for('static', filename='img/backgroud.jpg') }});">
         <div class="container">
-        </div>
-      </nav>
-    </div>
-    </div><!-- End Page Title -->
-
-    <section id="blog-details" class="blog-details">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-    
-        <div class="row g-5 justify-content-center text-center">
-    
-          <div class="col-lg-8">
-    
-            <article class="article">
-    
-              <div class="post-img">
-                <img src="{{ url_for('static', filename='img/image_model/BG-DL.jpeg') }}" alt="" class="img-fluid">
-              </div>
-    
-              <h2 class="title">Deep Learning Code Documentation</h2>
-    
-              <div class="meta-top">
-    
-              </div><!-- End meta top -->
-    
-              <div class="content">
-                <p>
-                  Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                  Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
-                </p>
-    
-                <p>
-                  Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
-                </p>
-    
-                <div id="deepl-learning">
-                  <hr></hr>
-                </div>
-
-                <blockquote>
-                  <p>
-                    UI
-                  </p>
-                </blockquote>
-    
-                <h3>About Dataset</h3>
-                <p>
-                  Twitter Sentiment Dataset: Detailed Information
-                  This dataset comprises a comprehensive collection of 16,130 unique data points, representing sentiments expressed on Twitter. The dataset covers a broad spectrum of emotions, capturing sentiments ranging from very negative to very positive comments.
-                  
-                  With this dataset, researchers and analysts can delve into the analysis of Twitter sentiment and explore the trends and patterns in public opinion. By leveraging advanced natural language processing techniques, sentiment analysis algorithms can classify and quantify the sentiment expressed in each tweet, enabling applications such as brand monitoring, market research, and social trend analysis.
-                  
-                  By studying the sentiments conveyed through Twitter, businesses, organizations, and researchers can gain valuable insights into public perception, customer feedback, and emerging trends. Uncover the sentiment behind the tweets and unlock the power of social media data for actionable insights and informed decision-making.
-                </p>
-            
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-        <!-- Deep Learning Page Title & Breadcrumbs -->
-        <div id="reinforcement-learning" class="model-section">
-        <div data-aos="fade" class="page-title">
-          <div class="heading">
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-              <div class="row d-flex justify-content-center text-center">
-                <div class="col-lg-8">
-                  <h1>Reinforcement Learning</h1>
-                  <p class="mb-0">Reinforcement learning is a type of machine learning where an agent learns to make decisions in an environment, based on trial-and-error learning and feedback in the form of rewards or penalties.</p>
-                </div>
+          <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-xl-10">
+              <div class="text-center">
+                <h3>Click the picture</h3>
+                <p>sghslifhsdlkjfbdskljjfvhsjbfhdjfs</p>
               </div>
             </div>
           </div>
+        </div>
+      </section><!-- End Call-to-action Section -->    
+
+      <!-- Clients Section - Home Page -->
+      <section id="clients" class="clients">
+        <div class="container-fluid" data-aos="fade-up">
+          <div class="row justify-content-center gy-4">
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <a class="zoom-effect" href="/median_house">
+                <img src="{{ url_for('static', filename='img/image_model/linear.png') }}" class="img-fluid" alt="">
+              </a>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <a class="zoom-effect" href="/heart_disease_logistic">
+                  <img src="{{ url_for('static', filename='img/image_model/logical.png') }}" class="img-fluid" alt="">
+              </a>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <a class="zoom-effect" href="/heart-disease">
+                <img src="{{ url_for('static', filename='img/image_model/neural.png') }}" class="img-fluid" alt="">
+              </a>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <a class="zoom-effect" href="#deepl-learning">
+                <img src="{{ url_for('static', filename='img/image_model/deep.png') }}" class="img-fluid" alt="">
+              </a>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+                <a class="zoom-effect" href="#rein-learning">
+                <img src="{{ url_for('static', filename='img/image_model/reinforcement.png') }}" class="img-fluid" alt="">
+              </a>
+            </div><!-- End Client Item -->
+
+          </div>
+        </div>
+      </section><!-- End Clients Section -->
+
+      <!-- Linear Regression Page Title & Breadcrumbs -->
+      <div id="linear-regression" class="model-section">
+        <div data-aos="fade" class="page-title">
           <nav class="breadcrumbs">
             <div class="container">
             </div>
           </nav>
+          <div class="heading">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+              <div class="row d-flex justify-content-center text-center">
+                <div class="col-lg-8">
+                  <h1>Linear Regression</h1>
+                  <p class="mb-0">Linear regression is a supervised learning algorithm used to predict continuous output variables.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div><!-- End Page Title -->
+      </div><!-- End Page Title -->
 
-        <section id="blog-details" class="blog-details">
-
-          <div class="container" data-aos="fade-up" data-aos-delay="100">
-        
-            <div class="row g-5 justify-content-center text-center">
-        
+      <!-- Linear Regression - Blog Details Page -->
+      <section id="blog-details" class="blog-details">
+          <div class="container " data-aos="fade-up" data-aos-delay="100">
+            <div class="row g-5 justify-content-center">
               <div class="col-lg-8">
-        
                 <article class="article">
-        
                   <div class="post-img">
-                    <img src="{{ url_for('static', filename='img/image_model/BG-RL2.png') }}" alt="" class="img-fluid">
+                    <img class="blog-head-image" src="{{ url_for('static', filename='img/image_model/BG-LR2.png') }}" alt="" class="img-fluid">
                   </div>
-        
-                  <h2 class="title">Reinforcement Learning Code Documentation</h2>
+
+                  <h2 class="title text-center">Linear Regression Code Documentation </h2>
         
                   <div class="meta-top">
-        
                   </div><!-- End meta top -->
         
                   <div class="content">
+                    <h4 class="text-center">The Linear Regression Model</h4>
                     <p>
-                      Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                      Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                        The Linear regression model is used to create a predictor on Median house price based on 30yr Interest rate.
+                        The code works by training the model on the data of median house rate and 30yr interest house rate establishing a relationship between the variables.
+                        But the Linear regression model only assumes that there is a linear relationship between the variables.
                     </p>
-        
                     <p>
-                      Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
+                        To use the code, you need to run the colab notebook link or use the UI below where you only needed to input the 30yr interest rate.
                     </p>
-        
-                    <div id="rein-learning">
+                    <h4 class="text-center">Libraries Used:</h4>
+                    <ul>
+                        <li>Pandas</li>
+                        <li>Seaborn</li>
+                        <li>Stats.smodel.api</li>
+                        <li>Matplotlib</li>
+                        <li>Sklearn</li>
+                        <li>Pickle</li>
+                    </ul>
+                    <h4 class="text-center">Common Functions:</h4>
+                    <ul>
+                        <li>Data.shape: To determine the dimensions of the data.</li>
+                        <li>Data.plot: To visualize the data.</li>
+                        <li>Data.describe: To get the statistical values of the data.</li>
+                        <li>Data.corr() and data.info: To display the dimensioned data.</li>
+                        <li>lm = linear_model.LinearRegression(), model = lm.fit(interestRate, homePrice): Used to build the linear regression model.</li>
+                        <li>model.coef_, model.intercept_, and model.score(interestRate, homePrice): Used as accuracy metrics.</li>
+                    </ul>
+                    <h4 class="text-center">Limitations</h4>
+                    <p>
+                        The limitations of the code are that it only assumes a linear relationship and the dataset also only has a small amount of data.
+                    </p>
+
+                    <div id="linear-learning">
                       <hr></hr>
                     </div>
+                    <hr></hr>
 
                     <blockquote>
                       <p>
-                       UI
+                        UI
                       </p>
                     </blockquote>
-
-                    <h3>About Simulation Environtment</h3>
+                    <div id="reinforcement-l" class="model-section">
+                    <h2>About Simulation Environment</h2>
                     <p>
+                    </div>
                       Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui.
                       Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
                       Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
                     </p>
-                  
                   </div>
                 </article>
               </div>
             </div>
           </div>
-        </section>
-    
+      </section>
 
+      <!-- Logistic Regression Page Title & Breadcrumbs -->
+      <div id="logistic-regression" class="model-section">
+          <div data-aos="fade" class="page-title">
+            <nav class="breadcrumbs">
+              <div class="container">
+              </div>
+            </nav>
+            <div class="heading">
+              <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row d-flex justify-content-center text-center">
+                  <div class="col-lg-8">
+                    <h1>Logistic Regression</h1>
+                    <p class="mb-0">Logistic regression is a supervised learning algorithm used to predict binary or categorical output variables based on input variables.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div><!-- End Page Title -->
 
-  </main>
+        <!-- Logistic Regression - Blog Details Page -->
+      <section id="blog-details" class="blog-details">
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row g-5 justify-content-center">
+              <div class="col-lg-8">
+                <article class="article">
 
-<!-- Footer -->
-<footer id="footer" class="footer">
+                  <div class="post-img">
+                    <img class="blog-head-image" src="{{ url_for('static', filename='img/image_model/BG-LLR2.png') }}" alt="" class="img-fluid">
+                  </div>
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="{{ url_for('views.home') }}" class="logo d-flex align-items-center">
-            <span>Append</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+                  <h2 class="title  text-center">Logistic Regression Code Documentation</h2>
+
+                  <div class="meta-top">
+
+                  </div><!-- End meta top -->
+
+                  <div class="content">
+                    <h4 class=" text-center">Usage Instructions</h4>
+                    <p>To properly use the code you must enter the neccesary inputs on the UI or follow the colab link for the full code</p>
+                    <ol>
+                      <li>
+                        Provide the required inputs by setting the values for the following fields:
+                        <ul>
+                          <li>Age: Enter the age of the patient using the <code>age_field</code> input.</li>
+                          <li>Sex: Select the sex of the patient (Male or Female) using the <code>sex_field</code> input.</li>
+                          <li>Chest Pain Type: Choose the type of chest pain from the options provided using the <code>cp_field</code> input.</li>
+                          <li>Resting Blood Pressure: Enter the resting blood pressure of the patient in mm Hg using the <code>trtbps_field</code> input.</li>
+                          <li>Cholesterol: Enter the cholesterol level of the patient in mg/dl using the <code>chol_field</code> input.</li>
+                          <li>Fasting Blood Sugar: Select the fasting blood sugar level of the patient (<120 mg/dl or >120 mg/dl) using the <code>fbs_field</code> input.</li>
+                          <li>Resting ECG: Choose the restingographic results from the options provided using the <code>restecg_field</code> input.</li>
+                          <li>Maximum Heart Rate Achieved: Enter the maximum heart rate achieved by the patient using the <code>thalachh_field</code> input.</li>
+                          <li>Exercise Induced Angina: Select whether the patient experienced exercise-induced angina (No or Yes) using the <code>exng_field</code> input.</li>
+                          <li>ST Depression Induced by Exercise: Enter the ST depression induced by exercise value using the <code>oldpeak_field</code> input.</li>
+                          <li>Slope of the Peak Exercise ST Segment: Choose the slope of the peak exercise ST segment from the options provided using the <code>slp_field</code> input.</li>
+                          <li>Number of Major Vessels Colored by Flourosopy: Select the number of major vessels (0-3) colored by flourosopy using the <code>caa_field</code> input.</li>
+                          <li>Thalassemia: Choose the thalassemia type from the options provided using the <code>thall_field</code> input.</li>
+                        </ul>
+                      </li>
+                      <li>After providing the inputs, run the code and wait for the prediction to be generated. The possible outputs are as follows:
+                        <ul>
+                          <li>If the output is 0, the model predicts that there is a risk of heart disease. This will be displayed as "The model predicts that there is a risk of heart disease."</li>
+                          <li>If the output is not 0, the model predicts that there is no risk of heart disease. This will be displayed as "The model predicts that there is no risk of heart disease."</li>
+                        </ul>
+                      </li>
+                    </ol>
+
+                    <h4 class=" text-center">The code uses these libraries:</h4>
+                      <ol type="a">
+                        <li>
+                          Pandas
+                          <ul>
+                            <li>Pandas is used for data manipulation and analysis. It provides data structures and functions to efficiently work with structured data, such as the heart disease dataset.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Numpy
+                          <ul>
+                            <li>NumPy is a fundamental library for numerical computing in Python. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays. Since the data will be put into arrays, NumPy along with its operations is essential for the code to work.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Pickle
+                          <ul>
+                            <li>Pickle is a Python module used for object serialization. It allows you to convert Python objects into a binary format that can be stored in a file or transferred across a network. Pickle is often used to save trained machine learning models to disk, allowing them to be loaded and reused later.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Sklearn
+                          <ul>
+                            <li>Scikit-learn is a powerful machine learning library in Python. It provides a wide range of algorithms and tools for tasks such as classification, regression, clustering, and dimensionality reduction. Scikit-learn is used in the code for model evaluation and performance metrics.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Matplotlib
+                          <ul>
+                            <li>Matplotlib is used to visualize data, explore patterns, and communicate results in a visual format.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Seaborn
+                          <ul>
+                            <li>Seaborn is used to simplify the process of creating complex visualizations and offers additional statistical features for exploring and analyzing data.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Math
+                          <ul>
+                            <li>The math module is used in logistic regression for calculations involving mathematical formulas and computations.</li>
+                          </ul>
+                        </li>
+                      </ol>
+
+                    <h4 class="text-center">Code's Important Functions</h4>
+
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/clr1.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        The code block loads the code from the google drive and display it column name if successful.
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/clr2.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        <p>
+                          The code block does and display the statistical analysis of the dataset mainly the total count, minimum value, maximum value, mean, and median at 25%, 50%, and 75%.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/clr3.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        The data is split into training and test sets. The model is then trained with the training set then the initial model accuracy is then shown.
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/clr4.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        This code block is the second iteration it has the same process as the first one but the accuracy metrics are changed to F1 score, precision, and recall.
+                      </div>
+                    </div>
+                    
+                    <div class="limitations">
+                      <h4 class="text-center">Limitations of the trained model</h4>
+                      <ul>
+                        <li>It can't really tell you if you have a heart disease cause the data don't have other variables such as the environment and lifestyle. The dataset only has laboratory results.</li>
+                        <li>The model only has 89% accuracy after the second iteration which is not enough with the accuracy needed in the medical field, which is 95% to 99%.</li>
+                        <li>The model itself may have some errors or bugs that the programmers overlooked.</li>
+                      </ul>
+                    </div>
+
+                    <a href="https://colab.research.google.com/drive/1VPWas_Ki_ZvB3kJaIBxDIBOceYdfQ5K3?usp=sharing">Link to Full Logistic Regression Code</a>
+
+                    <div>
+                      <hr></hr>
+                    </div>
+
+                    <blockquote>
+                      <p>
+                        UI.
+                      </p>
+                    </blockquote>
+
+                    <h3>About Dataset</h3>
+                    <p>
+                      Personal Loan Dataset: Customer Profiles and Financial Indicators
+                    </p>
+                    <p>
+                      The dataset offers a comprehensive view of customer profiles and financial indicators related to personal loans. With 5000 rows and 14 columns, this dataset provides a wealth of information for analysis and research purposes. Dive deeper into customer attributes such as age, professional experience, income, family size,usage, education level, mortgage details, and banking preferences. Gain valuable insights into factors influencing personal loan acceptance, identify patterns in customer behavior, and explore the relationships between various features. This dataset is a valuable resource for financial institutions, researchers, and analysts looking to understand customer preferences and make data-driven decisions.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- Neural network Page Title & Breadcrumbs -->
+      <div id="neural-network" class="model-section">
+        <div data-aos="fade" class="page-title">
+          <nav class="breadcrumbs">
+            <div class="container">
+            </div>
+          </nav>
+          <div class="heading">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+              <div class="row d-flex justify-content-center text-center">
+                <div class="col-lg-8">
+                  <h1>Neural Network</h1>
+                  <p class="mb-0">Neural networks are a class of algorithms inspired by the structure and function of the human brain, used for a wide range of tasks such as image recognition, natural language processing, and more.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-  
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="{{ url_for('views.home') }}">Home</a></li>
-            <li><a href="{{ url_for('views.home') }}">About us</a></li>
-            <li><a href="{{ url_for('views.home') }}">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
+      </div><!-- End Page Title -->
+
+      <!-- Neural network - Blog Details Page -->
+      <section id="blog-details" class="blog-details">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+      
+          <div class="row g-5 justify-content-center text-center">
+      
+            <div class="col-lg-8">
+      
+              <article class="article">
+      
+                <div class="post-img">
+                  <img class="blog-head-image" src="{{ url_for('static', filename='img/image_model/BG-NN2.png') }}" alt="" class="img-fluid">
+                </div>
+      
+                <h2 class="title">Neural Network Code Documentation</h2>
+      
+                <div class="meta-top">
+      
+                </div><!-- End meta top -->
+      
+                <div class="content">
+                  <p>
+                    Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
+                    Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                  </p>
+      
+                  <p>
+                    Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
+                  </p>
+                  
+                  <div id="neural-learning">
+                    <hr></hr>
+                  </div>
+
+                  <blockquote>
+                    <p>
+                      UI
+                    </p>
+                  </blockquote>
+    
+                  <h3>About Dataset</h3>
+                  <p>
+                    Heart Disease Diagnosis Datasets: Detailed Information
+        This collection includes four datasets related to heart disease diagnosis, sourced from esteemed medical institutions: Cleveland Clinic Foundation, Hungarian Instiology, V.A. Medical Center in Long Beach, CA, and University Hospital in Zurich, Switzerland. Each database shares a common instance format, with 76 raw attributes, although only a subset of 14 attributes has been extensively used in past experiments.
+        
+        The "goal" field within these databases indicates the presence of heart disease in patients, with integer values ranging from 0 (no presence) to 4. Notably, the Cleveland database has been widely utilized by machine learning researchers in heart disease studies.
+        
+        To respect privacy, the names and social security numbers of patients have been replaced with dummy values. In addition to the processed Cleveland database, the directory also contains the four unprocessed files.
+        
+        Number of instances:
+        - Cleveland: 303
+        - Hungarian: 294
+        - Switzerland: 123
+        - Long Beach VA: 200
+        
+        Attribute Information:
+        The dataset comprises 76 attributes, with published experiments typically focusing on a subset of 14 attributes. These attributes include patient demographics, medical measurements, and history. Complete attribute documentation is available for in-depth analysis. The datasets provide valuable insights into factors contributing to heart disease presence, allowing researchers and healthcare professionals to explore patterns, conduct experiments, and develop accurate diagnostic models.
+        
+        Class Distribution:
+        The class distribution varies across the databases, with different frequencies for each category of heart disease diagnosis. Please refer to the specific dataset for detailed class distribution information.
+        
+        Please note that the dataset may contain missing attribute values, which are denoted with the value -9.0.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-  
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
+      </section>
+
+      <!-- Deep Learning Page Title & Breadcrumbs -->
+      <div id="deep-learning" class="model-section">
+        <div data-aos="fade" class="page-title">
+          <nav class="breadcrumbs">
+            <div class="container">
+            </div>
+          </nav>
+          <div class="heading">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+              <div class="row d-flex justify-content-center text-center">
+                <div class="col-lg-8">
+                  <h1>Deep Learning</h1>
+                  <p class="mb-0">Deep learning is a subset of neural networks that involves training multi-layered models to perform complex tasks, often with large amounts of data.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-  
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+      </div><!-- End Page Title -->
+
+      <!-- Deep Learning - Blog Details Page -->
+      <section id="blog-details" class="blog-details">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-5 justify-content-center text-center">
+            <div class="col-lg-8">
+              <article class="article">
+                <div class="post-img">
+                  <img class="blog-head-image" src="{{ url_for('static', filename='img/image_model/BG-DL.jpeg') }}" alt="" class="img-fluid">
+                </div>
+      
+                <h2 class="title">Deep Learning Code Documentation</h2>
+      
+                <div class="meta-top">
+      
+                </div><!-- End meta top -->
+      
+                <div class="content">
+                  <p>
+                    Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
+                    Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                  </p>
+      
+                  <p>
+                    Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
+                  </p>
+      
+                  <div id="deepl-learning">
+                    <hr></hr>
+                  </div>
+
+                  <blockquote>
+                    <p>
+                      UI
+                    </p>
+                  </blockquote>
+      
+                  <h3>About Dataset</h3>
+                  <p>
+                    Twitter Sentiment Dataset: Detailed Information
+                    This dataset comprises a comprehensive collection of 16,130 unique data points, representing sentiments expressed on Twitter. The dataset covers a broad spectrum of emotions, capturing sentiments ranging from very negative to very positive comments.
+                    
+                    With this dataset, researchers and analysts can delve into the analysis of Twitter sentiment and explore the trends and patterns in public opinion. By leveraging advanced natural language processing techniques, sentiment analysis algorithms can classify and quantify the sentiment expressed in each tweet, enabling applications such as brand monitoring, market research, and social trend analysis.
+                    
+                    By studying the sentiments conveyed through Twitter, businesses, organizations, and researchers can gain valuable insights into public perception, customer feedback, and emerging trends. Uncover the sentiment behind the tweets and unlock the power of social media data for actionable insights and informed decision-making.
+                  </p>
+              
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Reinforcement learning Page Title & Breadcrumbs -->
+      <div id="reinforcement-learning" class="model-section">
+          <div data-aos="fade" class="page-title">
+            <div class="heading">
+              <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row d-flex justify-content-center text-center">
+                  <div class="col-lg-8">
+                    <h1>Reinforcement Learning</h1>
+                    <p class="mb-0">Reinforcement learning is a type of machine learning where an agent learns to make decisions in an environment, based on trial-and-error learning and feedback in the form of rewards or penalties.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav class="breadcrumbs">
+              <div class="container">
+              </div>
+            </nav>
+          </div>
+      </div><!-- End Page Title -->
+
+        <!-- Reinforcement learning - Blog Details Page -->
+      <section id="blog-details" class="blog-details">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-5 justify-content-center text-center">
+            <div class="col-lg-8">
+                  <article class="article">
+          
+                    <div class="post-img">
+                      <img class="blog-head-image" src="{{ url_for('static', filename='img/image_model/BG-RL2.png') }}" alt="" class="img-fluid">
+                    </div>
+          
+                    <h2 class="title">Reinforcement Learning Code Documentation</h2>
+          
+                    <div class="meta-top">
+          
+                    </div><!-- End meta top -->
+          
+                    <div class="content">
+                      <p>
+                        Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
+                        Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                      </p>
+          
+                      <p>
+                        Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
+                      </p>
+          
+                      <div id="rein-learning">
+                        <hr></hr>
+                      </div>
+
+                      <blockquote>
+                        <p>
+                        UI
+                        </p>
+                      </blockquote>
+
+                      <h3>About Simulation Environtment</h3>
+                      <p>
+                        Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui.
+                        Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
+                        Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
+                      </p>
+                    
+                    </div>
+                  </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+
+        <div class="container footer-top">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-about">
+              <a href="{{ url_for('views.home') }}" class="logo d-flex align-items-center">
+                <span>Append</span>
+              </a>
+              <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+              <div class="social-links d-flex mt-4">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+      
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="{{ url_for('views.home') }}">Home</a></li>
+                <li><a href="{{ url_for('views.home') }}">About us</a></li>
+                <li><a href="{{ url_for('views.home') }}">Services</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Product Management</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Graphic Design</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+              <h4>Contact Us</h4>
+              <p>A108 Adam Street</p>
+              <p>New York, NY 535022</p>
+              <p>United States</p>
+              <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+              <p><strong>Email:</strong> <span>info@example.com</span></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="container copyright text-center mt-4">
+          <p>&copy; <span>{{ current_year }}</span> <strong class="px-1">Append</strong> <span>All Rights Reserved</span></p>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      
+      </footer>
+      <!-- End Footer -->
+      
+
+      <!-- Scroll Top Button -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-  
-    <div class="container copyright text-center mt-4">
-      <p>&copy; <span>{{ current_year }}</span> <strong class="px-1">Append</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  
-  </footer>
-  <!-- End Footer -->
-  
 
-  <!-- Scroll Top Button -->
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
 
-<!-- Preloader -->
-<div id="preloader">
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
-
-<!-- Vendor JS Files -->
-<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
-<script src="{{ url_for('static', filename='vendor/purecounter/purecounter_vanilla.js') }}"></script>
-<script src="{{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-<script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
-<script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
-<script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
-
-<!-- Template Main JS File -->
-<script src="{{ url_for('static', filename='js/main.js') }}"></script>
-
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
 </html>
