@@ -9,7 +9,7 @@ web = create_web()
 heart_disease_model = tf.keras.models.load_model('Neural_Network.h5')
 # Load the saved logistic regression model using pickle
 with open('heart_dsease.pickle', 'rb') as file:
-    heart_disease_logistic = pickle.load(file)
+    heart_disease_ = pickle.load(file)
 with open('median_house.pickle', 'rb') as file:
     median = pickle.load(file)
 
@@ -56,7 +56,7 @@ def heart_disease():
 
 
 
-@web.route('/heart-disease-logistic', methods=['GET', 'POST'])
+@web.route('/heart_disease_logistic', methods=['GET', 'POST'])
 def heart_disease_logistic():
     if request.method == 'POST':
         
@@ -76,7 +76,7 @@ def heart_disease_logistic():
 
         # Preprocess the input values
         data = np.array([[age, sex, cp, trtbps, chol, fbs, restecg, thalachh, exng, oldpeak, slp, caa, thall]])
-        output = heart_disease_logistic.predict(data)[0][0]
+        output = heart_disease_.predict(data)[0]
         
         # Return the prediction as a JSON response
         if output < 0.5:
@@ -100,7 +100,7 @@ def median_house():
         data = np.array([[interest_rate]])
         output = median.predict(data)[0]
         
-        return render_template("result_linear.html", result=output)
+        return render_template("result_linear.html", result=output[0])
         
     return render_template("linear_regression.html")
 if __name__ == '__main__':
