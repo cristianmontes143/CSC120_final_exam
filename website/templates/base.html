@@ -76,7 +76,7 @@
             </section><!-- End Hero Section -->
             
             <!-- About Section - Home Page -->
-            <section id="about" class="about">
+            <section id="about" class="about" style="background-image: url('{{ url_for('static', filename='img/image_model/background.png') }}');">>
                 <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row align-items-xl-center gy-5">
                     <div class="col-xl-5 content">
@@ -87,21 +87,21 @@
                     <div class="col-xl-7">
                     <div class="row gy-5 icon-boxes">
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box">
+                        <div class="icon-box bg-info text-white">
                             <i class="bi bi-buildings"></i>
                             <h3>Linear Regression</h3>
                             <p>Linear regression is a supervised learning algorithm used to predict continuous output variables.</p>
                         </div>
                         </div> <!-- End Icon Box -->
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="icon-box">
+                        <div class="icon-box bg-success text-white">
                             <i class="bi bi-clipboard-pulse"></i>
                             <h3>Logistic Regression</h3>
                             <p>Logistic regression is a supervised learning algorithm used to predict binary or categorical output variables based on input variables.</p>
                         </div>
                         </div> <!-- End Icon Box -->
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="icon-box">
+                        <div class="icon-box bg-warning text-dark">
                             <i class="bi bi-command"></i>
                             <h3>Neural Network</h3>
                             <p>Neural networks are a class of algorithms inspired by the structure and function of the human brain, used for a wide range of tasks such as image recognition, natural language processing, and more.</p>
@@ -115,7 +115,7 @@
                         </div>
                         </div> <!-- End Icon Box -->
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-                        <div class="icon-box">
+                        <div class="icon-box bg-secondary text-white">
                             <i class="bi bi-graph-up-arrow"></i>
                             <h3>Deep Learning</h3>
                             <p>Deep learning is a subset of neural networks that involves training multi-layered models to perform complex tasks, often with large amounts of data.</p>
