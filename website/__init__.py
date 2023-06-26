@@ -1,4 +1,5 @@
-from flask import Flask
+from flask import Flask, render_template
+import pickle
 
 def create_web():
     web = Flask(__name__)
@@ -9,5 +10,8 @@ def create_web():
     
     web.register_blueprint(views, url_prefix='/')
     web.register_blueprint(auth, url_prefix='/')
-
     return web
+
+
+
+
