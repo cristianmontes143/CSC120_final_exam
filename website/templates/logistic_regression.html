@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Heart Disease Prediction</title>
+</head>
+<body>
+  <h1>Heart Disease Prediction</h1>
+
+  <form action="" method="post">
+
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" id="age" value="35" name="age">
+    </div>
+  
+    <div>
+      <label>Sex:</label>
+      <input type="radio" name="sex" value="1" checked>
+      <label for="male">Male</label>
+      <input type="radio" name="sex" value="0">
+      <label for="female">Female</label>
+    </div>
+  
+    <div>
+      <label for="cp">Chest Pain Type:</label>
+      <select id="cp" name="cp">
+        <option value="0">Typical Angina</option>
+        <option value="1">Atypical Angina</option>
+        <option value="2">Non-anginal Pain</option>
+        <option value="3">Asymptomatic</option>
+      </select>
+    </div>
+  
+    <div>
+      <label for="trtbps">Resting Blood Pressure (mm Hg):</label>
+      <input type="number" id="trtbps" value="130" name="trtbps">
+    </div>
+  
+    <div>
+      <label for="chol">Cholesterol (mg/dl):</label>
+      <input type="number" id="chol" value="250" name="chol">
+    </div>
+  
+    <div>
+      <label>Fasting Blood Sugar:</label>
+      <input type="radio" name="fbs" value="0" checked>
+      <label for="fbs_low">&lt;120 mg/dl</label>
+      <input type="radio" name="fbs" value="1">
+      <label for="fbs_high">&gt;120 mg/dl</label>
+    </div>
+  
+    <div>
+      <label for="restecg">Resting ECG:</label>
+      <select id="restecg" name="restecg">
+        <option value="0">Normal</option>
+        <option value="1">ST-T Wave Abnormality</option>
+        <option value="2">Left Ventricular Hypertrophy</option>
+      </select>
+    </div>
+  
+    <div>
+      <label for="thalachh">Maximum Heart Rate Achieved:</label>
+      <input type="number" id="thalachh" value="150" name="thalachh">
+    </div>
+  
+    <div>
+      <label>Exercise Induced Angina:</label>
+      <input type="radio" name="exng" value="0" checked>
+      <label for="exng_no">No</label>
+      <input type="radio" name="exng" value="1">
+      <label for="exng_yes">Yes</label>
+    </div>
+  
+    <div>
+      <label for="oldpeak">ST Depression Induced by Exercise:</label>
+      <input type="number" id="oldpeak" value="1.0" step="0.1" name="oldpeak">
+    </div>
+  
+    <div>
+      <label for="slp">Slope of the Peak Exercise ST Segment:</label>
+      <select id="slp" name="slp">
+        <option value="0">Upsloping</option>
+        <option value="1">Flat</option>
+        <option value="2">Downsloping</option>
+      </select>
+    </div>
+  
+    <div>
+      <label for="caa">Number of Major Vessels (0-3) Colored by Flourosopy:</label>
+      <select id="caa" name="caa">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+  
+    <div>
+      <label for="thall">Thalassemia:</label>
+      <select id="thall" name="thall">
+        <option value="1">Normal</option>
+        <option value="2">Fixed Defect</option>
+        <option value="3">Reversible Defect</option>
+      </select>
+    </div>
+  
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
