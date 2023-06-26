@@ -261,6 +261,8 @@
                   </div><!-- End meta top -->
 
                   <div class="content">
+                    <h4 class=" text-center">The Logistic Regression</h4>
+                    <p>The Logical regression model is used to create a binary predictor on the possibility of heart disease it is based on heart diseases dataset the contains 5000 unique data. The model trains the data by iteratively updating the model's coefficients using a technique called maximum likelihood estimation. It uses a logistic function to map the linear combination of the input variables to a probability, which is then used to classify the data into different classes. Its main feature is the classification of the inputs of whether it has the possibility of having heart diseases or not.</p>
                     <h4 class=" text-center">Usage Instructions</h4>
                     <p>To properly use the code you must enter the neccesary inputs on the UI or follow the colab link for the full code</p>
                     <ol>
@@ -291,7 +293,7 @@
                     </ol>
 
                     <h4 class=" text-center">The code uses these libraries:</h4>
-                      <ol type="a">
+                      <ol type="1">
                         <li>
                           Pandas
                           <ul>
@@ -433,15 +435,11 @@
 
       <!-- Neural network - Blog Details Page -->
       <section id="blog-details" class="blog-details">
-
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-      
-          <div class="row g-5 justify-content-center text-center">
-      
+          <div class="row g-5 justify-content-center">
             <div class="col-lg-8">
-      
               <article class="article">
-      
+
                 <div class="post-img">
                   <img class="blog-head-image" src="{{ url_for('static', filename='img/image_model/BG-NN2.png') }}" alt="" class="img-fluid">
                 </div>
@@ -453,14 +451,155 @@
                 </div><!-- End meta top -->
       
                 <div class="content">
+                  <h4 class=" text-center">The Neural Network</h4>
                   <p>
-                    Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                    Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                    Just like above a Neural Network model is used to a predictor on the possibility of heart disease it is based on heart disease dataset that contains 5000 unique data. The model trains the data by iteratively updating the model's coefficients using a technique called maximum likelihood estimation. But this model has many advantages compared to logistic regression mainly non-linearity. A neural network can capture complex relationships between inputs and outputs. It can also learn hierarchical representations of the data, which can lead to better performance and generalization. Its main function is the classification of the inputs of whether it has the possibility of having heart diseases or not.
                   </p>
-      
-                  <p>
-                    Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
-                  </p>
+                    <h4 class=" text-center">Usage Instructions</h4>
+                    <p>The necessary inputs are needed to put on the UI for the user to be able to use the model or run the colab code below.</p>
+                    <ol>
+                      <li>
+                        Provide the required inputs by setting the values for the following fields:
+                        <ul>
+                          <li>Age: Enter the age of the patient using the <code>age_field</code> input.</li>
+                          <li>Sex: Select the sex of the patient (Male or Female) using the <code>sex_field</code> input.</li>
+                          <li>Chest Pain Type: Choose the type of chest pain from the options provided using the <code>cp_field</code> input.</li>
+                          <li>Resting Blood Pressure: Enter the resting blood pressure of the patient in mm Hg using the <code>trtbps_field</code> input.</li>
+                          <li>Cholesterol: Enter the cholesterol level of the patient in mg/dl using the <code>chol_field</code> input.</li>
+                          <li>Fasting Blood Sugar: Select the fasting blood sugar level of the patient (<120 mg/dl or >120 mg/dl) using the <code>fbs_field</code> input.</li>
+                          <li>Resting ECG: Choose the restingographic results from the options provided using the <code>restecg_field</code> input.</li>
+                          <li>Maximum Heart Rate Achieved: Enter the maximum heart rate achieved by the patient using the <code>thalachh_field</code> input.</li>
+                          <li>Exercise Induced Angina: Select whether the patient experienced exercise-induced angina (No or Yes) using the <code>exng_field</code> input.</li>
+                          <li>ST Depression Induced by Exercise: Enter the ST depression induced by exercise value using the <code>oldpeak_field</code> input.</li>
+                          <li>Slope of the Peak Exercise ST Segment: Choose the slope of the peak exercise ST segment from the options provided using the <code>slp_field</code> input.</li>
+                          <li>Number of Major Vessels Colored by Flourosopy: Select the number of major vessels (0-3) colored by flourosopy using the <code>caa_field</code> input.</li>
+                          <li>Thalassemia: Choose the thalassemia type from the options provided using the <code>thall_field</code> input.</li>
+                        </ul>
+                      </li>
+                      <li>After providing the inputs, run the code and wait for the prediction to be generated. The possible outputs are as follows:
+                        <ul>
+                          <li>If the output is 0, the model predicts that there is a risk of heart disease. This will be displayed as "The model predicts that there is a risk of heart disease."</li>
+                          <li>If the output is not 0, the model predicts that there is no risk of heart disease. This will be displayed as "The model predicts that there is no risk of heart disease."</li>
+                        </ul>
+                      </li>
+                    </ol>
+
+                    <h4 class=" text-center">The code uses these libraries:</h4>
+                      <ol type="1">
+                        <li>
+                          Pandas
+                          <ul>
+                            <li>Pandas is used for data manipulation and analysis. It provides data structures and functions to efficiently work with structured data, such as the heart disease dataset.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Numpy
+                          <ul>
+                            <li>NumPy is a fundamental library for numerical computing in Python. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays. Since the data will be put into arrays, NumPy along with its operations is essential for the code to work.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Tensorflow
+                          <ul>
+                            <li>Tensorflow is a powerful open-source library for machine learning and deep learning that provides a comprehensive set of tools and functionalities for building and training neural networks.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Sklearn
+                          <ul>
+                            <li>Scikit-learn is a powerful machine learning library in Python. It provides a wide range of algorithms and tools for tasks such as classification, regression, clustering, and dimensionality reduction. Scikit-learn is used in the code for model evaluation and performance metrics.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Matplotlib
+                          <ul>
+                            <li>Matplotlib is used to visualize data, explore patterns, and communicate results in a visual format.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Seaborn
+                          <ul>
+                            <li>Seaborn is used to simplify the process of creating complex visualizations and offers additional statistical features for exploring and analyzing data.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Warnings
+                          <ul>
+                            <li>o	Warnings in programming refer to messages or alerts that indicate potential issues or non-standard behaviors. They help developers identify and address potential problems in their code, ensuring that it performs as intended and avoids potential pitfalls or errors.</li>
+                          </ul>
+                        </li>
+                      </ol>
+
+                    <h4 class="text-center">Code's Important Functions</h4>
+
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/cnn1.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        The code block loads the code from the google drive and display it column name along with sample data if successful.
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/cnn2.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        <p>
+                          The data is then split into trainning and test test. Data is then scaled and fit to an array.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/cnn3.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        Split the data a second time and then train the neural network with the trainning set. Next is make a test predections to calculate the metrics of accuracy, precision, recall, and F1.
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/cnn4.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        <p>
+                          The input layer is responsible for receiving the input data and passing it forward to the subsequent layers.
+                        </p>
+                        <p>
+                          Hidden layers is crutial in capturing and transforming the input data through a series of non-linear transformations. The number of hidden layers and the number of nodes in each hidden layer are design choices that depend on the complexity of the problem and the amount of data available. The neural network only had 3 layers.
+                        </p>
+                        <p>
+                          The output layer is the final layer of a neural network, responsible for producing the desired output or predictions. Since the output only has binary output we only need one layer.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/cnn5.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        The graph shows that there is less value loss each epoch of the model which is on 37% making its accuracy at 83%
+                      </div>
+                    </div>
+                    
+                    <div class="limitations">
+                      <h4 class="text-center">Limitations of the trained model</h4>
+                      <ul>
+                        <li>Overfitting: The neural network model may be prone to overfitting, especially if the dataset is small or unbalanced, leading to poor generalization on unseen data.</li>
+                        <li>Interpretability: Neural networks are often considered as black-box models, making it challenging to interpret and understand the reasoning behind their predictions.</li>
+                        <li>Data Availability: The model's performance heavily relies on the quality and representativeness of the available data. If the dataset does not capture the full range of relevant factors, the model's predictions may be limited.</li>
+                        <li>Computational Resources: Training and deploying neural network models may require significant computational resources, including processing power and memory, which can pose limitations in resource-constrained environments.</li>
+                        <li>It can't really tell you if you have a heart disease cause the data don't have other variables such as the environment and life style. The dataset only has laboratory results.</li>
+                      
+                      </ul>
+                    </div>
+
+                    <a href="https://colab.research.google.com/drive/1LPIAsAiF-Vhkioyp2Fd8lp0QjfoHbvAf?usp=sharing">Link to Full Logistic Regression Code</a>
                   
                   <div id="neural-learning">
                     <hr></hr>
