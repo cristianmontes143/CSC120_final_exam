@@ -130,7 +130,8 @@ section {
 }
 
 .page-title .heading {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 5px;
   border-top: 1px solid rgba(var(--color-default-rgb), 0.1);
 }
 
@@ -2477,6 +2478,46 @@ section {
 --------------------------------------------------------------*/
 /* Blog-details Section - Blog Details Page
 ------------------------------*/
+
+.blog-head-image{
+  margin:20px !important;
+  width: 95%;
+  display: flex;
+  align-items: center !important;
+  align-content: center;
+}
+
+.code-picture {
+  display: inline-flexbox;
+  margin: 20px;
+}
+
+.image-cc-details{
+  width: 100%;
+}
+
+.col-lg-8{
+  width: 95%;
+}
+.code-explanation {
+  overflow: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.limitations {
+  margin-top: 20px;
+}
+
+.limitations-list {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
 .blog-details .article {
   background-color: var(--color-box-background);
   box-shadow: 0 4px 16px rgba(var(--color-default-rgb), 0.1);
