@@ -1,7 +1,8 @@
 from website import create_web, render_template
 import pickle
-from flask import Flask, request, jsonify
+from flask import Flask, request
 import numpy as np
+import sklearn
 import tensorflow as tf
 
 web = create_web()
@@ -13,13 +14,12 @@ with open('heart_dsease.pickle', 'rb') as file:
 with open('median_house.pickle', 'rb') as file:
     median = pickle.load(file)
 
+
 @web.route('/heart-disease', methods=['GET', 'POST'])
 def heart_disease():
     if request.method == 'POST':
 # Load the saved neural network model
     # data = request.json
-
-    
         age = float(request.form['age'])
         sex = float(request.form['sex'])
         cp = float(request.form['cp'])
@@ -103,6 +103,7 @@ def median_house():
         return render_template("result_linear.html", result=output[0])
         
     return render_template("linear_regression.html")
+
 if __name__ == '__main__':
     
     web.run(debug=True)
