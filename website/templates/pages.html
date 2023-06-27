@@ -50,7 +50,7 @@
         <!-- Nav Menu -->
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="{{ url_for('views.about') }}" class="zoom-effects">Home</a></li>
+            <li><a href="{{ url_for('views.home') }}#about" class="zoom-effects">Home</a></li>
             <li><a href="#linear-regression" class="zoom-effects">Linear Regression</a></li>
             <li><a href="#logistic-regression" class="zoom-effects">Logistic Regression</a></li>
             <li><a href="#neural-network" class="zoom-effects">Neural Network</a></li>
@@ -69,10 +69,7 @@
           </ul>
     
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav><!-- End Nav Menu -->
-    
-        <a class="btn-getstarted" href="{{ url_for('views.home') }}#about" >Back to home page</a>
-    
+        </nav><!-- End Nav Menu -->    
       </div>
     </header><!-- End Header -->
     <main id="main">
@@ -208,12 +205,14 @@
                       </p>
                     </blockquote>
                     <div id="reinforcement-l" class="model-section">
-                    <h2>About Simulation Environment</h2>
+                    <h2>About Dataset</h2>
+                  </div>
                     <p>
-                    </div>
-                      Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui.
-                      Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
-                      Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
+                      The dataset contains 16 unique data about the median house price and 30yr Interest rate
+                    </p>
+                    <p>
+                      <a href="https://drive.google.com/file/d/1h4YmvfRekMgb7NxBUhEVN_7h2XFcJg0b/view?usp=sharing">
+                        Link to the dataset</a>
                     </p>
                   </div>
                 </article>
@@ -399,11 +398,31 @@
                     </blockquote>
 
                     <h3>About Dataset</h3>
+                    <p>Heart Disease Diagnosis Datasets: Detailed Information</p>
                     <p>
-                      Personal Loan Dataset: Customer Profiles and Financial Indicators
+                      This collection includes four datasets related to heart disease diagnosis, sourced from esteemed medical institutions: Cleveland Clinic Foundation, Hungarian Instiology, V.A. Medical Center in Long Beach, CA, and University Hospital in Zurich, Switzerland. Each database shares a common instance format, with 76 raw attributes, although only a subset of 14 attributes has been extensively used in past experiments. The "goal" field within these databases indicates the presence of heart disease in patients, with integer values ranging from 0 (no presence) to 4. Notably, the Cleveland database has been widely utilized by machine learning researchers in heart disease studies. To respect privacy, the names and social security numbers of patients have been replaced with dummy values. In addition to the processed Cleveland database, the directory also contains the four unprocessed files.
+                    </p>
+                    <ul>
+                      Number of instances:
+                      <li>Cleveland: 303</li>
+                      <li>Hungarian: 294</li>
+                      <li>Switzerland: 123</li>
+                      <li>Long Beach VA: 200</li>
+                    </ul>
+                    <p>
+                      Attribute Information:
+                      The dataset comprises 76 attributes, with published experiments typically focusing on a subset of 14 attributes. These attributes include patient demographics, medical measurements, and history. Complete attribute documentation is available for in-depth analysis. The datasets provide valuable insights into factors contributing to heart disease presence, allowing researchers and healthcare professionals to explore patterns, conduct experiments, and develop accurate diagnostic models.
                     </p>
                     <p>
-                      The dataset offers a comprehensive view of customer profiles and financial indicators related to personal loans. With 5000 rows and 14 columns, this dataset provides a wealth of information for analysis and research purposes. Dive deeper into customer attributes such as age, professional experience, income, family size,usage, education level, mortgage details, and banking preferences. Gain valuable insights into factors influencing personal loan acceptance, identify patterns in customer behavior, and explore the relationships between various features. This dataset is a valuable resource for financial institutions, researchers, and analysts looking to understand customer preferences and make data-driven decisions.
+                      Class Distribution:
+                      The class distribution varies across the databases, with different frequencies for each category of heart disease diagnosis. Please refer to the specific dataset for detailed class distribution information.
+                    </p>
+                    <p>
+                      Please note that the dataset may contain missing attribute values, which are denoted with the value -9.0.
+                    </p>
+                    <p>
+                      <a href="https://www.kaggle.com/datasets/imnikhilanand/heart-attack-prediction?fbclid=IwAR2l8aCSwyR0qrA9Go5_IRsEq79VKjfLSUpTizExJC17cNxc7KI_90jikAA">
+                        Link to the dataset</a>
                     </p>
                   </div>
                 </article>
@@ -611,27 +630,31 @@
                   </blockquote>
     
                   <h3>About Dataset</h3>
+                  <p>Heart Disease Diagnosis Datasets: Detailed Information</p>
                   <p>
-                    Heart Disease Diagnosis Datasets: Detailed Information
-        This collection includes four datasets related to heart disease diagnosis, sourced from esteemed medical institutions: Cleveland Clinic Foundation, Hungarian Instiology, V.A. Medical Center in Long Beach, CA, and University Hospital in Zurich, Switzerland. Each database shares a common instance format, with 76 raw attributes, although only a subset of 14 attributes has been extensively used in past experiments.
-        
-        The "goal" field within these databases indicates the presence of heart disease in patients, with integer values ranging from 0 (no presence) to 4. Notably, the Cleveland database has been widely utilized by machine learning researchers in heart disease studies.
-        
-        To respect privacy, the names and social security numbers of patients have been replaced with dummy values. In addition to the processed Cleveland database, the directory also contains the four unprocessed files.
-        
-        Number of instances:
-        - Cleveland: 303
-        - Hungarian: 294
-        - Switzerland: 123
-        - Long Beach VA: 200
-        
-        Attribute Information:
-        The dataset comprises 76 attributes, with published experiments typically focusing on a subset of 14 attributes. These attributes include patient demographics, medical measurements, and history. Complete attribute documentation is available for in-depth analysis. The datasets provide valuable insights into factors contributing to heart disease presence, allowing researchers and healthcare professionals to explore patterns, conduct experiments, and develop accurate diagnostic models.
-        
-        Class Distribution:
-        The class distribution varies across the databases, with different frequencies for each category of heart disease diagnosis. Please refer to the specific dataset for detailed class distribution information.
-        
-        Please note that the dataset may contain missing attribute values, which are denoted with the value -9.0.
+                    This collection includes four datasets related to heart disease diagnosis, sourced from esteemed medical institutions: Cleveland Clinic Foundation, Hungarian Instiology, V.A. Medical Center in Long Beach, CA, and University Hospital in Zurich, Switzerland. Each database shares a common instance format, with 76 raw attributes, although only a subset of 14 attributes has been extensively used in past experiments. The "goal" field within these databases indicates the presence of heart disease in patients, with integer values ranging from 0 (no presence) to 4. Notably, the Cleveland database has been widely utilized by machine learning researchers in heart disease studies. To respect privacy, the names and social security numbers of patients have been replaced with dummy values. In addition to the processed Cleveland database, the directory also contains the four unprocessed files.
+                  </p>
+                  <ul>
+                    Number of instances:
+                    <li>Cleveland: 303</li>
+                    <li>Hungarian: 294</li>
+                    <li>Switzerland: 123</li>
+                    <li>Long Beach VA: 200</li>
+                  </ul>
+                  <p>
+                    Attribute Information:
+                    The dataset comprises 76 attributes, with published experiments typically focusing on a subset of 14 attributes. These attributes include patient demographics, medical measurements, and history. Complete attribute documentation is available for in-depth analysis. The datasets provide valuable insights into factors contributing to heart disease presence, allowing researchers and healthcare professionals to explore patterns, conduct experiments, and develop accurate diagnostic models.
+                  </p>
+                  <p>
+                    Class Distribution:
+                    The class distribution varies across the databases, with different frequencies for each category of heart disease diagnosis. Please refer to the specific dataset for detailed class distribution information.
+                  </p>
+                  <p>
+                    Please note that the dataset may contain missing attribute values, which are denoted with the value -9.0.
+                  </p>
+                  <p>
+                    <a href="https://www.kaggle.com/datasets/imnikhilanand/heart-attack-prediction?fbclid=IwAR2l8aCSwyR0qrA9Go5_IRsEq79VKjfLSUpTizExJC17cNxc7KI_90jikAA">
+                      Link to the dataset</a>
                   </p>
                 </div>
               </article>
@@ -663,7 +686,7 @@
       <!-- Deep Learning - Blog Details Page -->
       <section id="blog-details" class="blog-details">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row g-5 justify-content-center text-center">
+          <div class="row g-5 justify-content-center">
             <div class="col-lg-8">
               <article class="article">
                 <div class="post-img">
@@ -677,15 +700,154 @@
                 </div><!-- End meta top -->
       
                 <div class="content">
+                  <h4 class=" text-center">The Deep Learning</h4>
                   <p>
-                    Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                    Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                    The Deep learning is done by BERT model where is used to create a model that can detect tweet sentiment from very negative to very positive (0 = negative, 4 = positive).
                   </p>
+                    <h4 class=" text-center">Usage Instructions</h4>
+                    <p>To test the model, you just need to enter a twitter sentence on the full colab code and it will detect right away the sentiment of the sentence.</p>
+
+                    <h4 class=" text-center">The code uses these libraries:</h4>
+                      <ol type="1">
+                        <li>
+                          Pandas
+                          <ul>
+                            <li>Pandas is used for data manipulation and analysis. It provides data structures and functions to efficiently work with structured data, such as the heart disease dataset.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Numpy
+                          <ul>
+                            <li>NumPy is a fundamental library for numerical computing in Python. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays. Since the data will be put into arrays, NumPy along with its operations is essential for the code to work.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Tensorflow
+                          <ul>
+                            <li>Tensorflow is a powerful open-source library for machine learning and deep learning that provides a comprehensive set of tools and functionalities for building and training neural networks.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Sklearn
+                          <ul>
+                            <li>Scikit-learn is a powerful machine learning library in Python. It provides a wide range of algorithms and tools for tasks such as classification, regression, clustering, and dimensionality reduction. Scikit-learn is used in the code for model evaluation and performance metrics.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Tranformer
+                          <ul>
+                            <li>Transformer is to be able to initialize the BERT model along with its functions.</li>
+                          </ul>
+                        </li>
+                      </ol>
+
+                    <h4 class="text-center">Code's Important Functions</h4>
+
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/cdl1.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        The code block extracts the data from zip file google drive to make it usable for the colab notebook.
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/cdl2.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        <p>
+                          This code block moves the data into an an three dimentional array to make more accessible for BERT to do its necessary functions and pre-processing.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/cdl3.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        <p>
+                          The first code block spits the data into two category mainly the trainning data and test trainning.
+                        </p>
+                        <p>
+                          The second code block labels the data through label encoding. Label encoding labeled that with unique identifiers that makes BERT learns semantic and sentence relationships.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/cdl4.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        <p>
+                          The code block saves the encoded data into a .npy file 
+                        </p>
+                        <p>
+                          The keras layer here represents a specific computation or transformation that is applied to the input data to produce an output.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/cdl5.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        The next is tokenazation, this function breaks the array unto individual tokens and makes it ready for pre-processing.
+                        <p>The text pre-processing is vocab file and make all lowercase.</p>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/cdl6.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        <p>In initial trainning the data is inputed unto different layers mainly the <code>input_word_ids</code> which is the main input. <code>input_mask</code> which is the main trainning layer of the model. <code>segement_ids</code> This layer is for making the BERT understand semantic relationship</p>
+                        <p></p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/cdl7.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        <p>Compile the model with the optimizer which is the accuracy.</p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="code-picture">
+                        <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/cdl8.png') }}">
+                      </div>
+                      <div class="code-explanation">
+                        <p>The graph shows that as the validation loss goes down the validation accuracy goes up.</p>
+                        <p>The final accuracy after the initaial trainning is: 84%, with a loss of: 37%</p>
+                      </div>
+                    </div>
+
+                    <div class="limitations">
+                      <h4 class="text-center">Limitations of the trained model</h4>
+                      <ul>
+                        <li>Lack of domain-specific knowledge: BERT is a pre-trained language model trained on a large corpus of general text. However, sentiment analysis on specific domains, such as Twitter, may require domain-specific knowledge and context that BERT may not fully capture. The sentiment expressed in tweets often involves unique language patterns, slang, abbreviations, and emoticons, which might not be adequately captured by the generic pre-training of BERT.</li>
+                        <li>Fine-tuning limitations: While BERT is often fine-tuned on downstream tasks, including sentiment analysis, the performance of the fine-tuned model may still be influenced by the specific choices made during fine-tuning, such as the selection of hyperparameters, training strategies, and evaluation metrics. Fine-tuning BERT on the sentiment140 dataset may require careful consideration and experimentation to achieve optimal results.</li>
+                        <li>Computational requirements: BERT is a large and complex model, consisting of numerous parameters and layers. Training and deploying BERT can require significant computational resources and time, making it less practical for some applications with limited resources.</li>
+                      </ul>
+                    </div>
+
+                    <h4 class="text-center">References</h4>
+                      <div>
+                        <a href="https://colab.research.google.com/drive/1rmNXyyfHO2tkKC9mzpLqt8x2j2SAAJ_W?usp=sharing">
+                          Link to The Full Study of Analyzing Tweeter Sentiments</a>
+                      </div>
       
-                  <p>
-                    Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
-                  </p>
-      
+                      <a href="https://colab.research.google.com/drive/1KTVKe8MCR5SUYkBNxyJH3ANoBLt_r_Ek?usp=sharing">
+                        Link to Full BERT model Code</a>
+
                   <div id="deepl-learning">
                     <hr></hr>
                   </div>
@@ -697,15 +859,12 @@
                   </blockquote>
       
                   <h3>About Dataset</h3>
-                  <p>
-                    Twitter Sentiment Dataset: Detailed Information
-                    This dataset comprises a comprehensive collection of 16,130 unique data points, representing sentiments expressed on Twitter. The dataset covers a broad spectrum of emotions, capturing sentiments ranging from very negative to very positive comments.
-                    
-                    With this dataset, researchers and analysts can delve into the analysis of Twitter sentiment and explore the trends and patterns in public opinion. By leveraging advanced natural language processing techniques, sentiment analysis algorithms can classify and quantify the sentiment expressed in each tweet, enabling applications such as brand monitoring, market research, and social trend analysis.
-                    
-                    By studying the sentiments conveyed through Twitter, businesses, organizations, and researchers can gain valuable insights into public perception, customer feedback, and emerging trends. Uncover the sentiment behind the tweets and unlock the power of social media data for actionable insights and informed decision-making.
-                  </p>
-              
+                    <p>Twitter Sentiment Dataset: Detailed Information</p>
+                    <p>This dataset comprises a comprehensive collection of 1.6 Million unique data points, representing sentiments expressed on Twitter. The dataset covers a broad spectrum of emotions, capturing sentiments ranging from very negative to very positive comments. With this dataset, researchers and analysts can delve into the analysis of Twitter sentiment and explore the trends and patterns in public opinion. By leveraging advanced natural language processing techniques, sentiment analysis algorithms can classify and quantify the sentiment expressed in each tweet, enabling applications such as brand monitoring, market research, and social trend analysis. By studying the sentiments conveyed through Twitter, businesses, organizations, and researchers can gain valuable insights into public perception, customer feedback, and emerging trends. Uncover the sentiment behind the tweets and unlock the power of social media data for actionable insights and informed decision-making.                    </p>
+                    <p>
+                      <a href="https://www.kaggle.com/datasets/kazanova/sentiment140">
+                        Link to the dataset</a>
+                    </p>
                 </div>
               </article>
             </div>
@@ -716,6 +875,10 @@
       <!-- Reinforcement learning Page Title & Breadcrumbs -->
       <div id="reinforcement-learning" class="model-section">
           <div data-aos="fade" class="page-title">
+            <nav class="breadcrumbs">
+              <div class="container">
+              </div>
+            </nav>
             <div class="heading">
               <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row d-flex justify-content-center text-center">
@@ -726,10 +889,6 @@
                 </div>
               </div>
             </div>
-            <nav class="breadcrumbs">
-              <div class="container">
-              </div>
-            </nav>
           </div>
       </div><!-- End Page Title -->
 
@@ -751,14 +910,200 @@
                     </div><!-- End meta top -->
           
                     <div class="content">
+                      <h4 class=" text-center">The Reinforcement Learning</h4>
                       <p>
-                        Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                        Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                        The code aims to simulate a traffic gridworld environment where vehicles move and interact within a predefined grid. It utilizes reinforcement learning techniques, specifically Q-learning, to train an agent to navigate the traffic environment and maximize rewards.
                       </p>
+                        <h4 class=" text-center">Usage Instructions</h4>
+                        <p>
+                          The Reinforcement Learning Model doesn't have a working User Interface instead we video of the agent on the gridworld.
+                        </p>
+    
+                        <h4 class="text-center">Code functionalities</h4>
+                          <ol type="1">
+                            <li>The code defines a <code>TrafficGridworldEnv</code> class that represents the traffic gridworld environment. It initializes the environment with a specified width, height, number of cars, and number of steps.</li>
+                            <li>The environment consists of different road structures such as intersections, roundabouts, 2+1 roads, and highways. Each structure is represented by a set of coordinates on the grid</li>
+                            <li>The <code>step</code> function in the environment class allows the agent to take actions and updates the state accordingly. It also handles collision detection and provides rewards based on the current state and action</li>
+                            <li>The <code>reset</code> function resets the environment to its initial state.</li>
+                            <li>The <code>render</code> function displays a visual representation of the gridworld environment.</li>
+                          </ol>
+                          <p>Overall, this code provides a framework for simulating and training an agent to navigate a traffic gridworld environment using reinforcement learning techniques.</p>
+
+                        <h4 class=" text-center">The code uses these libraries:</h4>
+                          <ol type="1">
+                            <li>
+                              Cv2
+                              <ul>
+                                <li>OpenCV library for computer vision tasks.</li>
+                              </ul>
+                            </li>
+                            <li>
+                              Numpy
+                              <ul>
+                                <li>NumPy is a fundamental library for numerical computing in Python. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays. Since the data will be put into arrays, NumPy along with its operations is essential for the code to work.</li>
+                              </ul>
+                            </li>
+                            <li>
+                              Random
+                              <ul>
+                                <li>Module for generating random numbers and making random selections.</li>
+                              </ul>
+                            </li>
+                            <li>
+                              Pickle
+                              <ul>
+                                <li>Module for serializing and deserializing Python objects.</li>
+                              </ul>
+                            </li>
+                            <li>
+                              Time
+                              <ul>
+                                <li>Module for working with time-related functions.</li>
+                              </ul>
+                            </li>
+                            <li>
+                              matplotlib.pyplot and animation
+                              <ul>
+                                <li>Matplotlib library for creating visualizations and animation visualizations</li>
+                              </ul>
+                            </li>
+                          </ol>
+    
+                        <h4 class="text-center">Code's Important Functions</h4>
+    
+                        <div>
+                          <div class="code-picture">
+                            <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/crrl1.png') }}">
+                          </div>
+                          <div class="code-explanation">
+                            <p>
+                              Initializes the <code>TrafficGridworldEnv</code> class with the specified parameters. It sets the width and height of the grid, the number of cars in the environment, and the number of steps for each episode.
+                            </p>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <div class="code-picture">
+                            <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/crrl2.png') }}">
+                          </div>
+                          <div class="code-explanation">
+                            <p>
+                              <code>TrafficGridworldEnv.step(self, action):</code> Takes an action as input and updates the state of the environment accordingly. It moves the current car or changes the current state based on the action. It checks for collisions and determines the reward and termination status of the current state.
+                            </p>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <div class="code-picture">
+                            <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/crrl3.png') }}">
+                          </div>
+                          <div class="code-explanation">
+                            <p>
+                              <code>TrafficGridworldEnv.reset(self):</code> Resets the environment to its initial state. It reinitializes the grid and randomly assigns positions to the cars.
+                            </p>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <div class="code-picture">
+                            <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/crrl4.png') }}">
+                          </div>
+                          <div class="code-explanation">
+                            <p>
+                              <code>Vehicle.__init__(self, length, speed, direction):</code> Initializes the Vehicle class with the specified parameters. It sets the length, speed, and direction of the vehicle. 
+                            </p>
+                            <p>
+                              <code>Vehicle.move(self, grid):</code> Moves the vehicle in the specified direction if it is possible, considering collisions with other vehicles and grid boundaries.
+                            </p>
+                            <p>
+                              <code>Vehicle.can_move(self, grid):</code> Checks if the vehicle can move in the specified direction without colliding with other vehicles or going outside the grid.
+                            </p>
+                          </div>
+                        </div>
+    
+                        <div>
+                          <div class="code-picture">
+                            <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/crrl5.png') }}">
+                          </div>
+                          <div class="code-explanation">
+                            <p>
+                              <code>generate_vehicles(grid):</code> Generates a random number of vehicles in the gridworld environment. It creates vehicles with random types, positions, speeds, and directions.
+                            </p>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <div class="code-picture">
+                            <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/crrl6.png') }}">
+                          </div>
+                          <div class="code-explanation">
+                            <p>
+                              <code>run_traffic_simulation(env, q_table):</code> Runs the traffic simulation using the trained Q-table. It iterates over episodes and performs actions based on the Q-values, updating the rewards and success rates.
+                            </p>
+                          </div>
+                        </div>
+    
+                        <div>
+                          <div class="code-picture">
+                            <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/crrl7.png') }}">
+                          </div>
+                          <div class="code-explanation">
+                            <p>
+                              <code>get_state(env):</code> Retrieves the state of the environment by combining information about the current state and car. It returns a unique state value.
+                            </p>
+                          </div>
+                        </div>
+    
+                        <div>
+                          <div class="code-picture">
+                            <img class="image-cc-details" src="{{ url_for('static', filename='img/Pages/crrl8.png') }}">
+                          </div>
+                          <div class="code-explanation">
+                            <p>
+                              <code>render_animation(env, q_table):</code> Renders an animation of the traffic simulation. It displays the movement of vehicles in the gridworld environment using OpenCV.
+                            </p>
+                          </div>
+                        </div>
+    
+                        <div class="limitations">
+                          <h4 class="text-center">Classes</h4>
+                          <ul>
+                            <li>
+                              <code>TrafficGridworldEnv:</code> Represents the traffic gridworld environment. It has properties such as width, height, num_cars, and num_steps. It includes methods for stepping through the environment, resetting it, and rendering a visual representation.
+                            </li>
+                            <li>
+                              <code>Vehicle:</code> Represents a vehicle in the traffic environment. It has properties such as length, speed, and direction. It includes methods for moving the vehicle, checking if it can move, and detecting collisions.
+                            </li>
+                          </ul>
+                        </div>
           
-                      <p>
-                        Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
-                      </p>
+                        <div class="limitations">
+                          <h4 class="text-center">Variables</h4>
+                          <ul>
+                            <li>
+                              <code>width:</code> Represents the width of the gridworld environment.
+                            </li>
+                            <li>
+                              <code>height:</code> Represents the height of the gridworld environment.
+                            </li>
+                            <li>
+                              <code>num_cars:</code> Represents the number of cars in the environment.
+                            </li>
+                            <li>
+                              <code>num_steps:</code> Represents the number of steps for each episode.
+                            </li>
+                            <li>
+                              <code>q_table:</code> Represents the Q-table used for Q-learning.
+                            </li>
+                            <li>
+                              <code>rewards:</code> Dictionary mapping specific states to corresponding rewards.
+                            </li>
+                          </ul>
+                        </div>
+
+                          <a href="https://github.com/JuniGearX/RL-MazeMap.git">
+                            Link to Full BERT model Code</a>
+    
           
                       <div id="rein-learning">
                         <hr></hr>
