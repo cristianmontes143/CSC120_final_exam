@@ -1,11 +1,9 @@
 from website import create_web, render_template
 import pickle
-from flask import Flask, request, jsonify
+from flask import Flask, request
 import numpy as np
+import sklearn
 import tensorflow as tf
-import torch
-from transformers import BertTokenizer, BertForSequenceClassification
-
 
 web = create_web()
 
@@ -22,8 +20,6 @@ def heart_disease():
     if request.method == 'POST':
 # Load the saved neural network model
     # data = request.json
-
-    
         age = float(request.form['age'])
         sex = float(request.form['sex'])
         cp = float(request.form['cp'])

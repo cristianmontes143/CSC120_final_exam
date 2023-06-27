@@ -76,39 +76,39 @@
             </section><!-- End Hero Section -->
             
             <!-- About Section - Home Page -->
-            <section id="about" class="about" style="background-image: url('{{ url_for('static', filename='img/image_model/background.png') }}');">>
+            <section id="about" class="about">>
                 <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row align-items-xl-center gy-5">
-                    <div class="col-xl-4 content bg-danger">
-                    <h2>What is Intelligent Systems?</h2>
+                    <div class="col-xl-4 content">
+                    <h1>What is Intelligent Systems?</h1>
                     <p>Intelligent systems refer to computer-based systems that can autonomously perform tasks that typically require human intelligence, such as perception, reasoning, learning, and decision-making. These systems often leverage techniques from artificial intelligence, machine learning, and other related fields to achieve their goals.</p>
                     <a href="{{ url_for('views.about') }}" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                     </div>
                     <div class="col-xl-7">
                     <div class="row gy-5 icon-boxes">
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box bg-info text-white">
+                        <div class="icon-box bg-secondary text-white">
                             <i class="bi bi-buildings"></i>
                             <h3>Linear Regression</h3>
                             <p>Linear regression is a supervised learning algorithm used to predict continuous output variables.</p>
                         </div>
                         </div> <!-- End Icon Box -->
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="icon-box bg-success text-white">
+                        <div class="icon-box bg-secondary text-white">
                             <i class="bi bi-clipboard-pulse"></i>
                             <h3>Logistic Regression</h3>
                             <p>Logistic regression is a supervised learning algorithm used to predict binary or categorical output variables based on input variables.</p>
                         </div>
                         </div> <!-- End Icon Box -->
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="icon-box bg-warning text-dark">
+                        <div class="icon-box bg-secondary text-white">
                             <i class="bi bi-command"></i>
                             <h3>Neural Network</h3>
                             <p>Neural networks are a class of algorithms inspired by the structure and function of the human brain, used for a wide range of tasks such as image recognition, natural language processing, and more.</p>
                         </div>
                         </div> <!-- End Icon Box -->
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                        <div class="icon-box">
+                        <div class="icon-box bg-secondary text-white">
                             <i class="bi bi-graph-up-arrow"></i>
                             <h3>Reinforcement Learning</h3>
                             <p>Reinforcement learning is a type of machine learning where an agent learns to make decisions in an environment, based on trial-and-error learning and feedback in the form of rewards or penalties.</p>
@@ -249,38 +249,36 @@
                     </div>
                     <!-- End Service Item -->
             
-                    <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-item d-flex">
-                        <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-                        <div>
-                        <h4 class="title"><a href="{{ url_for('views.about') }}" class="stretched-link">Bank Personal Loan</a></h4>
-                        <p class="description">Explore Personal Loan Dataset: 5000 Rows, 14 Columns
-                            Discover valuable insights from our dataset containing 5000 rows and 14 columns, including personal loan acceptance, customer demographics, financial indicators, and banking preferences.</p>
-                        </div>
-                    </div>
-                    </div><!-- End Service Item -->
-            
-                    <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-item d-flex">
-                        <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-                        <div>
-                        <h4 class="title"><a href="{{ url_for('views.about') }}" class="stretched-link"> Heart attack Prediction</a></h4>
-                        <p class="description">Heart Disease Diagnosis Datasets: Cleveland, Hungarian, Switzerland, Long Beach VA
-                            Explore four comprehensive heart disease diagnosis databases, each sourced from renowned medical institutions. Uncover valuable insights from these numeric-valued datasets containing 76 attributes, with a focus on distinguishing the presence or absence of heart disease.</p>
-                        </div>
-                    </div>
-                    </div><!-- End Service Item -->
-            
+                    
                     <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-item d-flex">
-                        <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-                        <div>
-                        <h4 class="title"><a href="{{ url_for('views.about') }}" class="stretched-link">Twitter sentiment</a></h4>
-                        <p class="description">Twitter Sentiment Dataset: 16,130 Unique Data Points
-                            Explore a vast collection of Twitter sentiment data encompassing a wide range of emotions, from very negative to very positive comments. Gain valuable insights into public sentiment and uncover trends and patterns in social media discussions.</p>
-                        </div>
-                    </div>
-                    </div><!-- End Service Item -->
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+                            <div>
+                                <h4 class="title"><a href="{{ url_for('views.about') }}" class="stretched-link">Twitter sentiment</a></h4>
+                                <p class="description">Twitter Sentiment Dataset: 1.6 Million Unique Data Points
+                                    Explore a vast collection of Twitter sentiment data encompassing a wide range of emotions, from very negative to very positive comments. Gain valuable insights into public sentiment and uncover trends and patterns in social media discussions.</p>
+                                </div>
+                            </div>
+                        </div><!-- End Service Item -->
+                        
+                        <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
+                            <div class="service-item d-flex">
+                                <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+                                <div>
+                                    <h4 class="title"><a href="{{ url_for('views.about') }}" class="stretched-link"> Heart attack Prediction</a></h4>
+                                    <p class="description">Heart Disease Diagnosis Datasets: Cleveland, Hungarian, Switzerland, Long Beach VA
+                                        Explore four comprehensive heart disease diagnosis databases, each sourced from renowned medical institutions. Uncover valuable insights from these numeric-valued datasets containing 76 attributes, with a focus on distinguishing the presence or absence of heart disease.</p>
+                                    </div>
+                                </div>
+                            </div><!-- End Service Item -->
+                            
+                            <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
+                                <div class="service-item d-flex">
+                                    <div class=""><i class=""></i></div>
+                                <div>
+                                    <a class="btn-getstarted clear-fix" href="{{ url_for('views.about') }}#about">Learn More</a>
+                            </div>
+                            </div><!-- End Service Item -->
                 </div>
             
                 </div>

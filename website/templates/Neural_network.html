@@ -2,111 +2,129 @@
 <html>
 <head>
   <title>Heart Disease Prediction</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
 </head>
 <body>
-  <h1>Heart Disease Prediction</h1>
+  <div class="container">
+    <h1 class="mt-4">Heart Disease Prediction</h1>
 
-  <form action="" method="post">
+    <form action="" method="post" class="mt-4">
 
-    <div>
-      <label for="age">Age:</label>
-      <input type="number" id="age" value="35" name="age">
-    </div>
-  
-    <div>
-      <label>Sex:</label>
-      <input type="radio" name="sex" value="1" checked>
-      <label for="male">Male</label>
-      <input type="radio" name="sex" value="0">
-      <label for="female">Female</label>
-    </div>
-  
-    <div>
-      <label for="cp">Chest Pain Type:</label>
-      <select id="cp" name="cp">
-        <option value="0">Typical Angina</option>
-        <option value="1">Atypical Angina</option>
-        <option value="2">Non-anginal Pain</option>
-        <option value="3">Asymptomatic</option>
-      </select>
-    </div>
-  
-    <div>
-      <label for="trtbps">Resting Blood Pressure (mm Hg):</label>
-      <input type="number" id="trtbps" value="130" name="trtbps">
-    </div>
-  
-    <div>
-      <label for="chol">Cholesterol (mg/dl):</label>
-      <input type="number" id="chol" value="250" name="chol">
-    </div>
-  
-    <div>
-      <label>Fasting Blood Sugar:</label>
-      <input type="radio" name="fbs" value="0" checked>
-      <label for="fbs_low">&lt;120 mg/dl</label>
-      <input type="radio" name="fbs" value="1">
-      <label for="fbs_high">&gt;120 mg/dl</label>
-    </div>
-  
-    <div>
-      <label for="restecg">Resting ECG:</label>
-      <select id="restecg" name="restecg">
-        <option value="0">Normal</option>
-        <option value="1">ST-T Wave Abnormality</option>
-        <option value="2">Left Ventricular Hypertrophy</option>
-      </select>
-    </div>
-  
-    <div>
-      <label for="thalachh">Maximum Heart Rate Achieved:</label>
-      <input type="number" id="thalachh" value="150" name="thalachh">
-    </div>
-  
-    <div>
-      <label>Exercise Induced Angina:</label>
-      <input type="radio" name="exng" value="0" checked>
-      <label for="exng_no">No</label>
-      <input type="radio" name="exng" value="1">
-      <label for="exng_yes">Yes</label>
-    </div>
-  
-    <div>
-      <label for="oldpeak">ST Depression Induced by Exercise:</label>
-      <input type="number" id="oldpeak" value="1.0" step="0.1" name="oldpeak">
-    </div>
-  
-    <div>
-      <label for="slp">Slope of the Peak Exercise ST Segment:</label>
-      <select id="slp" name="slp">
-        <option value="0">Upsloping</option>
-        <option value="1">Flat</option>
-        <option value="2">Downsloping</option>
-      </select>
-    </div>
-  
-    <div>
-      <label for="caa">Number of Major Vessels (0-3) Colored by Flourosopy:</label>
-      <select id="caa" name="caa">
-        <option value="0">0</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-      </select>
-    </div>
-  
-    <div>
-      <label for="thall">Thalassemia:</label>
-      <select id="thall" name="thall">
-        <option value="1">Normal</option>
-        <option value="2">Fixed Defect</option>
-        <option value="3">Reversible Defect</option>
-      </select>
-    </div>
-  
-    <button type="submit">Submit</button>
+      <div class="mb-3">
+        <label for="age" class="form-label">Age:</label>
+        <input type="number" id="age" value="35" name="age" class="form-control">
+      </div>
 
-  </form>
+      <div class="mb-3">
+        <label class="form-label">Sex:</label>
+        <div class="form-check">
+          <input type="radio" id="male" name="sex" value="1" checked class="form-check-input">
+          <label for="male" class="form-check-label">Male</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" id="female" name="sex" value="0" class="form-check-input">
+          <label for="female" class="form-check-label">Female</label>
+        </div>
+      </div>
 
+      <div class="mb-3">
+        <label for="cp" class="form-label">Chest Pain Type:</label>
+        <select id="cp" name="cp" class="form-select">
+          <option value="0">Typical Angina</option>
+          <option value="1">Atypical Angina</option>
+          <option value="2">Non-anginal Pain</option>
+          <option value="3">Asymptomatic</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="trtbps" class="form-label">Resting Blood Pressure (mm Hg):</label>
+        <input type="number" id="trtbps" value="130" name="trtbps" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="chol" class="form-label">Cholesterol (mg/dl):</label>
+        <input type="number" id="chol" value="250" name="chol" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Fasting Blood Sugar:</label>
+        <div class="form-check">
+          <input type="radio" id="fbs_low" name="fbs" value="0" checked class="form-check-input">
+          <label for="fbs_low" class="form-check-label">&lt;120 mg/dl</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" id="fbs_high" name="fbs" value="1" class="form-check-input">
+          <label for="fbs_high" class="form-check-label">&gt;120 mg/dl</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="restecg" class="form-label">Resting ECG:</label>
+        <select id="restecg" name="restecg" class="form-select">
+          <option value="0">Normal</option>
+          <option value="1">ST-T Wave Abnormality</option>
+          <option value="2">Left Ventricular Hypertrophy</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="thalachh" class="form-label">Maximum Heart Rate Achieved:</label>
+        <input type="number" id="thalachh" value="150" name="thalachh" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Exercise Induced Angina:</label>
+        <div class="form-check">
+          <input type="radio" id="exng_no" name="exng" value="0" checked class="form-check-input">
+          <label for="exng_no" class="form-check-label">No</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" id="exng_yes" name="exng" value="1" class="form-check-input">
+          <label for="exng_yes" class="form-check-label">Yes</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="oldpeak" class="form-label">ST Depression Induced by Exercise:</label>
+        <input type="number" id="oldpeak" value="1.0" step="0.1" name="oldpeak" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="slp" class="form-label">Slope of the Peak Exercise ST Segment:</label>
+        <select id="slp" name="slp" class="form-select">
+          <option value="0">Upsloping</option>
+          <option value="1">Flat</option>
+          <option value="2">Downsloping</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="caa" class="form-label">Number of Major Vessels (0-3) Colored by Fluoroscopy:</label>
+        <select id="caa" name="caa" class="form-select">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="thall" class="form-label">Thalassemia:</label>
+        <select id="thall" name="thall" class="form-select">
+          <option value="1">Normal</option>
+          <option value="2">Fixed Defect</option>
+          <option value="3">Reversible Defect</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

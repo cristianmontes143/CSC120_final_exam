@@ -50,7 +50,6 @@
         <!-- Nav Menu -->
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="{{ url_for('views.about') }}" class="zoom-effects">Home</a></li>
             <li><a href="#linear-regression" class="zoom-effects">Linear Regression</a></li>
             <li><a href="#logistic-regression" class="zoom-effects">Logistic Regression</a></li>
             <li><a href="#neural-network" class="zoom-effects">Neural Network</a></li>
@@ -202,11 +201,18 @@
                     </div>
                     <hr></hr>
 
+                    <h4 class="text-center">User Interface</h4>
+
                     <blockquote>
-                      <p>
-                        UI
-                      </p>
+                      <div class="code-picture" >
+                        <a class="zoom-effect" href="/median_house">
+                          <img src="{{ url_for('static', filename='img/image_model/linear.png') }}" class="img-fluid" alt="">
+                        </a>
+                      </div><!-- End Client Item -->
+                      
                     </blockquote>
+
+
                     <div id="reinforcement-l" class="model-section">
                     <h2>About Simulation Environment</h2>
                     <p>
@@ -392,10 +398,15 @@
                       <hr></hr>
                     </div>
 
+                    <h4 class="text-center">User Interface</h4>
+
                     <blockquote>
-                      <p>
-                        UI.
-                      </p>
+                      <div class="code-picture" >
+                        <a class="zoom-effect" href="/heart_disease_logistic">
+                          <img src="{{ url_for('static', filename='img/image_model/logical.png') }}" class="img-fluid" alt="">
+                        </a>
+                      </div><!-- End Client Item -->
+                      
                     </blockquote>
 
                     <h3>About Dataset</h3>
@@ -604,10 +615,15 @@
                     <hr></hr>
                   </div>
 
+                  <h4 class="text-center">User Interface</h4>
+
                   <blockquote>
-                    <p>
-                      UI
-                    </p>
+                    <div class="code-picture" >
+                      <a class="zoom-effect" href="/heart-disease">
+                        <img src="{{ url_for('static', filename='img/image_model/neural.png') }}" class="img-fluid" alt="">
+                      </a>
+                    </div><!-- End Client Item -->
+                    
                   </blockquote>
     
                   <h3>About Dataset</h3>
