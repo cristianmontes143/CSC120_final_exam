@@ -7,15 +7,13 @@ import tensorflow as tf
 
 web = create_web()
 
-heart_disease_model = tf.keras.models.load_model('Neural_Network.h5')
+
 # Load the saved logistic regression model using pickle
-with open('heart_dsease.pickle', 'rb') as file:
-    heart_disease_ = pickle.load(file)
-with open('median_house.pickle', 'rb') as file:
-    median = pickle.load(file)
 
 
-@web.route('/heart-disease', methods=['GET', 'POST'])
+
+
+@web.route('/heart_disease_', methods=['GET', 'POST'])
 def heart_disease():
     if request.method == 'POST':
 # Load the saved neural network model
@@ -34,16 +32,16 @@ def heart_disease():
         caa = float(request.form['caa'])
         thall = float(request.form['thall'])
         
-    
+        heart_disease_model = tf.keras.models.load_model('Neural_Network.h5')
         # Preprocess the input values
         data = np.array([[age, sex, cp, trtbps, chol, fbs, restecg, thalachh, exng, oldpeak, slp, caa, thall]])
         output = heart_disease_model.predict(data)[0][0]
         
         # Return the prediction as a JSON response
         if output < 0.5:
-            prediction = 'low risk of heart disease'
+            prediction = 'LOW RISK OF HEART DISEASE'
         else:
-            prediction = 'high risk of heart disease'
+            prediction = 'LOW RISK OF HEART DISEASE'
             
     
         return render_template("result_heart_disease.html", result=prediction)
@@ -73,7 +71,8 @@ def heart_disease_logistic():
         slp = float(request.form['slp'])
         caa = float(request.form['caa'])
         thall = float(request.form['thall'])
-
+        with open('heart_dsease.pickle', 'rb') as file:
+            heart_disease_ = pickle.load(file)
         # Preprocess the input values
         data = np.array([[age, sex, cp, trtbps, chol, fbs, restecg, thalachh, exng, oldpeak, slp, caa, thall]])
         output = heart_disease_.predict(data)[0]
@@ -96,7 +95,8 @@ def median_house():
     if request.method == 'POST':
         
         interest_rate = float(request.form['interest_rate'])
-        
+        with open('median_house.pickle', 'rb') as file:
+            median = pickle.load(file)
         data = np.array([[interest_rate]])
         output = median.predict(data)[0]
         
