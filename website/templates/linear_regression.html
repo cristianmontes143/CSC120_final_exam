@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Heart Disease Prediction</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
 </head>
+
 <body class="bg-light">
     <div class="container py-5 text-center">
         <h1>Median House</h1>
@@ -14,7 +16,7 @@
                 <input type="range" id="interest_rate" min="0" max="10" value="5" name="interest_rate" class="form-range">
                 <output for="interest_rate" id="interest_rate_output">5</output>
             </div>
-
+            <a class="btn btn-danger" href="{{ url_for('views.about') }}#about">Back</a>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
@@ -27,5 +29,7 @@
             interestRateOutput.textContent = interestRateInput.value;
         });
     </script>
+
 </body>
+  
 </html>
