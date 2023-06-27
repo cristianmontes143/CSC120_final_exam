@@ -24,7 +24,7 @@
         <title>{%block title %}CSC-120{%endblock %}</title> 
     </head>
 
-    <body>
+<body>
         <!-- ======= Header ======= -->
         <header id="header" class="header fixed-top d-flex align-items-center">
                 <div class="container-fluid d-flex align-items-center justify-content-between">
@@ -56,7 +56,7 @@
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav><!-- End Nav Menu -->
             
-                <a class="btn-getstarted" href="{{ url_for('views.home') }}#about">Learn More</a>
+                <a class="btn-getstarted" href="{{ url_for('views.about') }}#about">Learn More</a>
                 </div>
         </header><!-- End Header -->
     
@@ -144,7 +144,7 @@
                     <h3>Linear Regression</h3>
                     <p>Our Linear Regression model utilizes mortgage interest rates to predict median house prices. By training the model with 16 carefully selected data points, we have developed a powerful tool for various applications. Whether you're interested in real estate investment, mortgage lending, government policy-making, or economic analysis, our trained model provides valuable insights to support your decision-making process.
                     </p>
-                    <a href="{{ url_for('views.about') }}" "#linear-regression" class="btn btn-get-started">Get Started</a>
+                    <a href="{{ url_for('views.about') }}" "#linear-regression" class="btn btn-get-started">Read More</a>
 
                     </div>
                     <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
@@ -164,7 +164,7 @@
                     <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
                     <h3>Logistic Regression</h3>
                     <p>Our innovative personal loan predictor uses Logical Regression to determine whether an individual is likely to be approved for a loan. By analyzing a vast dataset of 5000 records, our model has been trained to accurately forecast loan outcomes. With this tool, you can streamline the loan application process and receive tailored loan offers that suit your unique financial needs.</p>
-                    <a href= {{ url_for('views.about' ) }}  class="btn btn-get-started align-self-start">Get Started</a>
+                    <a href= {{ url_for('views.about' ) }}  class="btn btn-get-started align-self-start">Read More</a>
                     </div>
                     </div>
                 </div><!-- Features Item -->
@@ -176,7 +176,7 @@
                     <p>
                         Our state-of-the-art neural network model has been specifically designed to assess the likelihood of a heart attack. Trained on a comprehensive dataset of 300 records, this powerful tool can provide you with an estimated probability of experiencing a heart attack. However, please note that this model is intended for code demonstration purposes only and should not be used for medical diagnosis or treatment. Always consult a healthcare professional for accurate medical assessments.
                     </p>
-                    <a href={{ url_for('views.about') }} class="btn btn-get-started">Get Started</a>
+                    <a href={{ url_for('views.about') }} class="btn btn-get-started">Read More</a>
                     </div>
                     <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
                     <div class="image-stack">
@@ -195,7 +195,7 @@
                     <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
                     <h3>Deep Learning</h3>
                     <p>Our advanced deep learning system harnesses the power of the BERT model to analyze the sentiment of tweets. With a robust training dataset comprising 16,200 unique records, our model is adept at detecting sentiment across a wide range, from very negative to very positive. Whether you're interested in gauging public opinion, conducting market research, or monitoring brand sentiment, our trained model provides accurate and insightful sentiment analysis for your Twitter data</p>
-                    <a href={{ url_for('views.about') }} class="btn btn-get-started align-self-start">Get Started</a>
+                    <a href={{ url_for('views.about') }} class="btn btn-get-started align-self-start">Read More</a>
                     </div>
                     </div>
                 </div><!-- Features Item -->
@@ -203,11 +203,11 @@
                 <div id="reinforcement-learning" class="model-section">
                 <div class="row gy-4 align-items-center features-item">
                     <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Reinforcement Learning</h3>
-                    <p>
-                        Our groundbreaking approach to reinforcement learning involves training an AI using a q-table within a grid-world traffic simulation. This trained AI offers tremendous potential for a range of applications, including autonomous cars, traffic management, and road construction/management. With our cutting-edge technology, you can unlock innovative solutions for optimizing traffic flow, improving road safety, and enhancing overall transportation efficiency. Experience the future of intelligent traffic systems with our trained AI.
-                    </p>
-                    <a href={{ url_for('views.about') }} class="btn btn-get-started">Get Started</a>
+                        <h3>Reinforcement Learning</h3>
+                        <p>
+                            Our groundbreaking approach to reinforcement learning involves training an AI using a q-table within a grid-world traffic simulation. This trained AI offers tremendous potential for a range of applications, including autonomous cars, traffic management, and road construction/management. With our cutting-edge technology, you can unlock innovative solutions for optimizing traffic flow, improving road safety, and enhancing overall transportation efficiency. Experience the future of intelligent traffic systems with our trained AI.
+                        </p>
+                        <a href={{ url_for('views.about') }} class="btn btn-get-started">Read More</a>
                     </div>
                     <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
                     <div class="image-stack">
@@ -217,7 +217,6 @@
                     </div>
                     </div>
                 </div><!-- Features Item -->
-            
                 </div>
             </section>
             <!-- End Features Section -->
